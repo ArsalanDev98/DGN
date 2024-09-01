@@ -12,7 +12,7 @@ const BetLounge: React.FC = () => {
                         <h1 className={styles.special_h1}>Lounge</h1>
                     </div>
                     <p className={styles.paragraph}>
-                        The Ultimate Community Matchmaking And Gaming Experience.<br />
+                        The Ultimate dddddCommunity Matchmaking And Gaming Experience.<br />
                         Gamifying The Social Landscape Of Telegram
                     </p>
                     <Link to="https://t.me/BetLoungePvP" className={styles.joinButton}>Join</Link>
