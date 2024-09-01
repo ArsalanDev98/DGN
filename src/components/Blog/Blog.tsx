@@ -16,7 +16,7 @@ const Blog: React.FC = () => {
             <img src={pic1} alt="How To Use and Integrate The Bot Into Your Group" className={styles.cardImage} />
             <div className={styles.cardContent}>
               <h3>How To Use and Integrate The Bot Into Your Group</h3>
-              <p>Discover the exciting features of Bet Lounge and how it can enhance your Telegram group chats with its unique gamification and betting bot.</p>
+              <p>Discover the exciting features of Decentralized Gaming Network and how it can enhance your Telegram group chats with its unique gamification and betting bot.</p>
               <p className={styles.date}>02/06/2024</p>
               <a href="/blog" className={styles.readMore}>Read More</a>
             </div>
@@ -25,7 +25,7 @@ const Blog: React.FC = () => {
             <img src={pic2} alt="Potential of Gamifying Telegram Group Chats with Betting Bots" className={styles.cardImage} />
             <div className={styles.cardContent}>
               <h3>Potential of Gamifying Telegram Group Chats with Betting Bots</h3>
-              <p>Discover the unique community interaction concept of Bet Lounge, where gambling, gaming, and financial management.</p>
+              <p>Discover the unique community interaction concept of Decentralized Gaming Network, where gambling, gaming, and financial management.</p>
               <p className={styles.date}>02/06/2024</p>
               <a href="/blog" className={styles.readMore}>Read More</a>
             </div>

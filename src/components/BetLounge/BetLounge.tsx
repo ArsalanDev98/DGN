@@ -8,8 +8,8 @@ const BetLounge: React.FC = () => {
             <div className={styles.container}>
                 <div>
                     <div className={styles.title}>
-                        <h1>Bet</h1>
-                        <h1 className={styles.special_h1}>Lounge</h1>
+                        <h1>Decentralized</h1>
+                        <h1 className={styles.special_h1}>Gaming Network</h1>
                     </div>
                     <p className={styles.paragraph}>
                         The Ultimate Community Matchmaking And Gaming Experience.<br />

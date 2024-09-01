@@ -8,7 +8,7 @@ const Newsletter: React.FC = () => {
         <div className={styles.newsletterContent}>
           <div className={styles.newsletterLeft}>
             <h2>Join Our Newsletter! <span role="img" aria-label="waving hand">👋</span></h2>
-            <p>Enjoying the bot? Stay updated with the latest news and updates for Bet Lounge.</p>
+            <p>Enjoying the bot? Stay updated with the latest news and updates for Decentralized Gaming Network.</p>
             <form className={styles.subscribeForm}>
               <input name="email" autoComplete="off" type="email" placeholder="Enter your email address" className={styles.emailInput} />
               <button type="submit" className={styles.subscribeButton}>Subscribe</button>

@@ -8,7 +8,7 @@ const Roadmap: React.FC = () => {
   return (
     <section className={styles.roadmapSection}>
       <div className={styles.roadmapContainer}>
-        <h1 className={styles.roadmapHeader}>Bet Lounge Roadmap</h1>
+        <h1 className={styles.roadmapHeader}>Decentralized Gaming Network Roadmap</h1>
         <img src={highlightImage} alt="highlight" className={styles.highlightImage} />
         <img src={roadmapImage} alt="roadmap" className={styles.roadmapImage} />
       </div>

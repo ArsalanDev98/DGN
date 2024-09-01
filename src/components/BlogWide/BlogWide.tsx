@@ -17,7 +17,7 @@ const BlogWide: React.FC = () => {
               <div className={styles.cardText}>
                 <h2>How To Use and Integrate The Bot Into Your Group</h2>
                 <p>
-                  Discover the exciting features of Bet Lounge and how it can enhance your Telegram group chats with its unique gamification bot.
+                  Discover the exciting features of Decentralized Gaming Network and how it can enhance your Telegram group chats with its unique gamification bot.
                 </p>
               </div>
               <div className={styles.cardDate}>02/06/2024</div>
@@ -29,7 +29,7 @@ const BlogWide: React.FC = () => {
               <div className={styles.cardText}>
                 <h2>Potential of Gamifying Telegram group chats with Gaming Bots:</h2>
                 <p>
-                  Discover the unique community interaction concept of Bet Lounge, where luck-based gaming and financial management intersect.
+                  Discover the unique community interaction concept of Decentralized Gaming Network, where luck-based gaming and financial management intersect.
                 </p>
               </div>
               <div className={styles.cardDate}>02/06/2024</div>

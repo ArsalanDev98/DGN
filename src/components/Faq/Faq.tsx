@@ -21,7 +21,7 @@ const faqData = [
   },
   {
     question: "Do I have to pay a fee for every transaction?",
-    answer: "No! We set up the system so you can input very small amounts without any fee. The only fees you will pay for are deposits and withdrawals. All matches within the Bet Lounge ecosystem all happen on a testnet. This is possible because of the fully P2P nature.",
+    answer: "No! We set up the system so you can input very small amounts without any fee. The only fees you will pay for are deposits and withdrawals. All matches within the Decentralized Gaming Network ecosystem all happen on a testnet. This is possible because of the fully P2P nature.",
   }
 ];
 

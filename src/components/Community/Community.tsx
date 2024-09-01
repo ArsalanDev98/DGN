@@ -14,7 +14,7 @@ const Community: React.FC = () => {
             <h2>Join Our Community</h2>
             <img src={highlightImage} alt="highlight" className={styles.highlightImage} />
             <p>
-              Discover the exciting features of Bet Lounge and how it can enhance your Telegram group chats with its unique gamification match bot.
+              Discover the exciting features of Decentralized Gaming Network and how it can enhance your Telegram group chats with its unique gamification match bot.
             </p>
           </div>
           <div className={styles.iconsContent}>
