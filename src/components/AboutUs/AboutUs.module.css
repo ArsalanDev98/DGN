@@ -1,0 +1,72 @@
+.aboutUsSection {
+    background-image: url("/assets/SVG/Background/ABOUT2.svg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+    .aboutUsContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+        gap: 20px;
+        overflow: hidden;
+        max-width: 1920px;
+        margin: 0 auto;
+
+        .leftColumn {
+            text-align: left;
+            max-width: 50%;
+
+            p {
+                margin-top: 24px;
+            }
+
+            .title {
+                width: fit-content;
+
+                h1 {
+                    font-family: "Berkshire Swash";
+                    font-size: 3rem;
+                    margin: 0;
+                    letter-spacing: 1px;
+
+                }
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .aboutUsImage {
+            width: 500px;
+        }
+
+        @media only screen and (max-width: 1026px) {
+            .aboutUsImage {
+                display: none;
+            }
+
+            .leftColumn {
+                max-width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 1400px) {
+            .aboutUsImage {
+                width: 300px;
+            }
+        }
+    }
+
+}
+
+/* UHD resolution */
+@media only screen and (min-width: 1080px) {
+    .aboutUsSection {
+        max-height: 1080px;
+    }
+}

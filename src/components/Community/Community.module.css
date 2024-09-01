@@ -1,0 +1,78 @@
+.communitySection {
+  background-image: url('/assets/PNG/HOMEPAGE/Background/JOIN.png');
+  background-size: cover;
+  background-position: center;
+
+  .communityContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .communityContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .textContent {
+    max-width: 60%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: "Berkshire Swash", cursive;
+  }
+
+  .highlightImage {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .iconsContent {
+    display: flex;
+    gap: 40px;
+  }
+
+  .icon {
+    width: 78px;
+    height: 78px;
+    transition: transform 0.3s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .communityContent {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .textContent {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .iconsContent {
+      margin-top: 20px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

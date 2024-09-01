@@ -1,0 +1,38 @@
+.roadmapSection {
+
+  background-image: url('/assets/PNG/ROADMAP/Images/page.png');
+  background-size: cover;
+  background-position: center;
+
+  .roadmapContainer {
+    padding: 30px 20px;
+    color: white;
+    min-height: 100vh;
+    /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .roadmapHeader {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Berkshire Swash", cursive;
+  }
+
+  .highlightImage {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 200px;
+  }
+
+  .roadmapImage {
+    width: 100%;
+    max-width: 1000px;
+    /* Adjust as needed */
+    height: auto;
+  }
+}

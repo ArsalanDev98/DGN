@@ -1,0 +1,19 @@
+.notFoundSection {
+  font-family: "Poppins", sans-serif;
+  background-image: url('/assets/PNG/HOMEPAGE/Background/FAQ.png');
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large
+  }
+
+  .httpCode {
+    font-size: 100px;
+  }
+}

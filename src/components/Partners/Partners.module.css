@@ -1,0 +1,55 @@
+.partnersSection {
+    background-image: url('/assets/PNG/HOMEPAGE/Background/PARTNER.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .partnersContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 150px;
+        margin: 0 auto;
+        max-width: 1920px;
+    }
+
+    .partnersContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 5%;
+    }
+
+    .partnerIcon {
+        height: auto;
+        transition: transform 0.3s ease;
+        margin: 0 5%;
+    }
+
+    .partnerIcon:hover {
+        transform: scale(1.1);
+    }
+
+    @media only screen and (max-width: 1026px) {
+        .partnersContainer {
+            height: 120px;
+        }
+
+        .partnerIcon {
+            height: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .partnersContainer {
+            height: 100px;
+        }
+
+        .partnerIcon {
+            height: 40px;
+        }
+    }
+}

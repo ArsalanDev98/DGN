@@ -1,0 +1,89 @@
+.howSection {
+  background-image: url('/assets/PNG/H2U/Background/page.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .howContainer {
+    padding: 50px 20px;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: "Berkshire Swash", cursive;
+  }
+
+  .highlightImage {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 200px;
+  }
+
+  .introText {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .stepsContainer {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .step {
+    background-color: rgba(12, 12, 12, 0.9);
+    border: 1px solid #715225;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .stepHeader {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .stepHighlight {
+    margin-bottom: 10px;
+    width: 100px;
+  }
+
+  .stepImage {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px 0;
+  }
+
+  .step p {
+    font-size: 1rem;
+  }
+
+  .step a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .step a:hover {
+    text-decoration: underline;
+  }
+}

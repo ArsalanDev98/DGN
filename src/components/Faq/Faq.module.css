@@ -1,0 +1,96 @@
+.faqSection {
+  background-image: url('/assets/PNG/HOMEPAGE/Background/FAQ.png');
+  background-size: cover;
+  background-position: center;
+
+  .faqContainer {
+    padding: 50px 20px;
+    color: white;
+    min-height: 957px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    .faqHeader {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-family: "Berkshire Swash", cursive;
+    }
+
+    .highlightImage {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
+
+    .faqList {
+      width: 80%;
+      max-width: 600px;
+      margin-top: 50px;
+    }
+
+    .faqItem {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 2px solid transparent;
+      background-clip: padding-box;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faqItem:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 10px;
+      padding: 2px;
+      background: linear-gradient(45deg, #b99850, #cfac5b, #9d7a40, #715225, #cdaa56, #daba5c, #cca757);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    .faqItem:hover {
+      background-color: rgba(0, 0, 0, 0.85);
+      transform: scale(1.02);
+    }
+
+    .faqItem h3 {
+      font-size: 1.5rem;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .faqItem p {
+      opacity: 0;
+      height: 0;
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      transition: opacity 0.3s ease, height 0.3s ease;
+    }
+
+    .faqItem.open p {
+      opacity: 1;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .faqContainer {
+      padding: 24px 0;
+    }
+  }
+}

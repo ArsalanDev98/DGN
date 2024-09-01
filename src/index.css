@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+  display: block;
+
+}
