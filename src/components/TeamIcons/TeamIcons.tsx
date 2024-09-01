@@ -26,17 +26,17 @@ const teamMembers = [
     urls: ["https://x.com/0xnicott", "https://t.me/OxMachiavelli", "https://www.linkedin.com/in/nico-machiavelli-950156226"]
   },
   {
-    name: "Elevated Oshi",
-    title: "CMO/Sales",
-    description: "4 experience years in crypto, advisor and team member to multiple 8 fig plus projects, Alpha KOL and strategist.",
+    name: "Sonic, Elevated and TraderB",
+    title: "Marketing Team",
+    description: "Over 15 years combined experience in crypto. Expansive KOL, Whale and private investor group network. Veteran advisors and builders for large utility projects.",
     image: elevatedGif,
     icons: [xIcon, telegramIcon],
     urls: ["https://twitter.com/thecryptoidol", "https://t.me/thecryptoidol"]
   },
   {
-    name: "Tom Bateman",
-    title: "CTO/Product Development",
-    description: "Computer Science MSc, ex 8 year Head of IT, multiple commercial web and solidity contract deployments.",
+    name: "Malz, Arsalan, Tom Bateman",
+    title: "Development Team",
+    description: "Our development team has a combined 20 years experience in full stack developement. Including an 8 year head of IT and multiple solidity and commercial deployments.",
     image: tomImage,
     icons: [xIcon, telegramIcon, linkedinIcon],
     urls: ["https://x.com/Tom__DeFi", "https://t.me/tom_defi", "https://www.linkedin.com/in/tom-defi-954667239"]
@@ -52,7 +52,15 @@ const TeamIcons: React.FC = () => {
           <div className={styles.cardContent}>
             <div className={styles.textContent}>
               <h3>{member.name}</h3>
-              <p className={styles.title} style={{ backgroundImage: 'linear-gradient(45deg, #b99850, #cfac5b, #9d7a40, #715225, #cdaa56, #daba5c, #cca757)' }}>{member.title}</p>
+              <p 
+                className={styles.title} 
+                style={{ 
+                  backgroundImage: 'linear-gradient(45deg, #b99850, #cfac5b, #9d7a40, #715225, #cdaa56, #daba5c, #cca757)',
+                  marginTop: index < 2 ? '40px' : '0px'
+                }}
+              >
+                {member.title}
+              </p>
               <p>{member.description}</p>
             </div>
             <div className={styles.iconsContainer}>
