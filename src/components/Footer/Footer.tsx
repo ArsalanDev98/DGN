@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <section className={styles.footerSection}>
       <div className={styles.footerContainer}>
-        <p className={styles.footerText}>© 2024 Bet Lounge. All Rights Reserved</p>
+        <p className={styles.footerText}>© 2024 Decentralized Gaming Network. All Rights Reserved</p>
       </div>
     </section>
 
