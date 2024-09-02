@@ -6,7 +6,7 @@ import linkedinIcon from '/assets/PNG/HOMEPAGE/Icons/linkedin.png';
 import chuniGif from '/assets/PNG/INCENTIVE/Gifs/chuni.gif';
 import nicoImage from '/assets/PNG/INCENTIVE/Images/nicomachiaveli.png';
 import elevatedGif from '/assets/PNG/HOMEPAGE/Gifs/elevated.gif';
-import tomImage from '/assets/PNG/HOMEPAGE/Images/tombateman.png';
+import tomImage from '/assets/PNG/HOMEPAGE/Images/code.png';
 
 const teamMembers = [
   {
