@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             <img src={logo} alt="Betz Logo" className={styles.logo} />
           </Link>
           <Link to="/" className={styles.logoTextLink}>
-            <h3 className={styles.logoText}>Betlounge</h3>
+            <h3 className={styles.logoText}>Decentralized Gaming Network</h3>
           </Link>
         </div>
         <div className={`${styles.navContent} ${menuOpen ? styles.showMenu : ''}`}>

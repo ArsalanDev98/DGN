@@ -46,8 +46,12 @@
   .logoTextLink {
     text-decoration: none;
     color: inherit;
-    margin-left: 10px;
+    margin-left: 1em;
     cursor: pointer;
+  }
+
+  .logoText {
+    font-size: 0.75em;
   }
 
   .navContent {
