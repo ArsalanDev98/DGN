@@ -7,17 +7,17 @@ const HowItWorks: React.FC = () => {
         {
             title: "Bot Integration",
             description: "It all starts with the bot being added to a Telegram group and made admin. Members can then deposit funds to play with directly on the bot, you will get a private deposit address for your account. Load up your account and you're ready to go!",
-            image: "/assets/PNG/HOMEPAGE/Images/bot integration.png",
+            image: "/assets/NewWeb/Assets/HowItWorksCards.png",
         },
         {
             title: "Custom PVP Matching",
             description: "Group owners can then use the private dm side of the bot to create and organize the matches. The bot will then prompt the owner to create different possible outcomes of the match. Once a match pool is created, it will show up in your menu. When you want to start the match process, you can then click Activate. You can also stop the match process by clicking Close.",
-            image: "/assets/PNG/HOMEPAGE/Images/custom pvp.png",
+            image: "/assets/NewWeb/Assets/HowItWorksCards.png",
         },
         {
             title: "Get Rewarded",
             description: "Once the results are in and the outcome is clear, the group owner can then go into the bot and Choose Outcome. Once the outcome is chosen the bot will automatically pay out the winners. Check your balance!",
-            image: "/assets/PNG/HOMEPAGE/Images/get rewarded.png",
+            image: "/assets/NewWeb/Assets/HowItWorksCards.png",
         },
     ];
 
