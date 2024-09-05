@@ -1,104 +1,104 @@
 .carouselContainer {
-    width: 100%;
-    max-width: 95%;
-    position: relative;
-  }
-  
-  .cardsContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .card {
-    display: flex;
-    align-items: stretch;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 49%;
-    height: 437px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #b99850;
-    box-sizing: border-box;
-  }
-  
-  .cardImage {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px 0 0 10px;
-  }
-  
-  .cardContent {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-  }
-  
-  .textContent {
-    flex-grow: 1;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #e8bc4d;
-  }
-  
-  .title::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.7);
-    margin-top: 10px;
-  }
-  
-  p {
-    margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .iconsContainer {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .icon {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .icon:hover {
-    transform: scale(1.1);
-  }
-  
-  .carouselControls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .arrowButton {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #e8bc4d;
-  }
-  
-  .arrowButton:hover {
-    transform: scale(1.1);
-  }
-  
+  width: 100%;
+  max-width: 95%;
+  position: relative;
+  overflow: hidden; /* Hide content outside the container */
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling effect */
+  will-change: transform;
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  border-radius: 32px;
+  overflow: hidden;
+  width: 49%;
+  height: 437px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #b99850;
+  box-sizing: border-box;
+}
+
+.cardImage {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.textContent {
+  flex-grow: 1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #e8bc4d;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.carouselControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e8bc4d;
+}
+
+.arrowButton:hover {
+  transform: scale(1.1);
+}

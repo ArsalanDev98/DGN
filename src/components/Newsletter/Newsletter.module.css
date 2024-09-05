@@ -1,13 +1,11 @@
 .newsletterSection {
-  background-image: url('/assets/PNG/HOMEPAGE/Background/footer_news.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #070200;
+  height: 225px;
 
   .newsletterContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
     color: white;
     max-width: 1920px;
     margin: 0 auto;
@@ -18,8 +16,6 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    padding: 20px 0;
-    align-items: center;
   }
 
   .newsletterLeft {

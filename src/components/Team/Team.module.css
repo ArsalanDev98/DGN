@@ -1,46 +1,47 @@
 .teamSection {
-    padding: 60px 0;
-    margin: 40px 0;
-    background-image: url('/assets/PNG/HOMEPAGE/Background/TEAM.png');
-    background-position: center;
-    background-size: cover;
+  padding: 60px 0;
+  margin: 40px 0;
+  background-image: url("/assets/PNG/HOMEPAGE/Background/TEAM.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .teamContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* Ensure consistent padding */
-    max-width: 1440px;
-    margin: 0 auto;
-    border-radius: 80px; /* Rounded corners */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Frame border */
-    backdrop-filter: blur(10px); /* Background blur */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 80px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Frame border */
+  backdrop-filter: blur(10px); /* Background blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    color: #fff; /* Ensure the text is visible */
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #fff; /* Ensure the text is visible */
 }
 
 .teamParagraph {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2rem;
-    line-height: 170%;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.70); /* Match other sections' text style */
-    max-width: 800px;
-    margin-bottom: 40px; /* Add space between paragraph and team icons */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  line-height: 170%;
+  font-weight: 500;
+  color: #bcbcc3; /* Match other sections' text style */
+  max-width: 800px;
+  margin-bottom: 40px; /* Add space between paragraph and team icons */
 }
 
 .teamIconsWrapper {
-    margin-top: 40px; /* Add space between the paragraph and team icons */
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Center the cardsContainer horizontally */
+  margin-top: 40px; /* Add space between the paragraph and team icons */
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the cardsContainer horizontally */
 }
