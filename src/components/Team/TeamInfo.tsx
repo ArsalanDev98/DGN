@@ -12,7 +12,8 @@ import nicoImage3 from "/assets/NewWeb/Assets/nico2.jpg";
 import nicoImage4 from "/assets/NewWeb/Assets/nico3.jpg";
 import nicoImage5 from "/assets/NewWeb/Assets/nico4.jpg";
 import nicoImage6 from "/assets/NewWeb/Assets/nico5.jpg";
-import nicoImage7 from "/assets/NewWeb/Assets/nico6.gif";
+import nicoImage7 from "/assets/NewWeb/Assets/nico6.jpg";
+import nicoImage8 from "/assets/NewWeb/Assets/nico7.jpg";
 
 const teamMembers = [
   {
