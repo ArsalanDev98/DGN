@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './BetLounge.module.css';
 import { Link } from 'react-router-dom';
 import Partners from '../Partners/Partners'; 
+import RouletteImage from '/assets/NewWeb/Assets/Roulette.png';
 
 const BetLounge: React.FC = () => {
     return (
@@ -21,9 +22,11 @@ const BetLounge: React.FC = () => {
                         <Partners />
                     </div>
                 </div>
+                {/* Add the roulette image */}
+                <img src={RouletteImage} alt="Roulette" className={styles.rouletteImage} />
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default BetLounge;

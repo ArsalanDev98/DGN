@@ -1,115 +1,156 @@
-  .betLounge_section {
-      width: 100%;
-      padding: 100px 0;
-      min-height: 100vh; /* Ensure full viewport height */
-      display: flex;
-      align-items: flex-start; /* Aligns content with the navbar logo */
-      justify-content: flex-start; /* Aligns content to the left */
-  }
-  
-  .container {
-      max-width: 1440px;
-      margin: 0 auto;
-      width: 100%;
-  }
-  
-  .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-  
-  .title {
-      font-size: 70px; /* Slightly increase font size */
-      margin-bottom: 20px;
-      line-height: 1.2; /* Control line-height for better spacing */
-  }
-  
-  .title h1 {
-      margin: 0;
-      letter-spacing: 1px;
-  }
-  
-  .special_h1 {
-      background: linear-gradient(130deg, #ffffff, #ffffff, #7e5e2c, #e8bc4d, #e8bc4d, #e8bc4d);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-top: -5px !important; /* Reduce the gap between title lines */
-  }
-  
-  .paragraph {
-      margin: 0 0 55px 0;
-      font-size: 24px;
-      font-family: Raleway, sans-serif;
-      color: rgba(255, 255, 255, 0.70);
-  }
-  
-  .joinButton {
-      display: inline-flex;
-      height: 56px;
-      padding: 20px 68px;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      background: linear-gradient(180deg, #EBA900 -6.86%, #FFF 103.43%);
-      color: #000;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      align-self: flex-start;
-      margin-bottom: 40px;
-  }
-  
-  .joinButton:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .partnersWrapper {
+/* BetLounge Section */
+.betLounge_section {
+    width: 100%;
+    padding: 100px 0;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    align-items: flex-start; /* Aligns content with the navbar logo */
+    justify-content: flex-start; /* Aligns content to the left */
+    position: relative; /* Needed for positioning the roulette image */
+}
+
+/* Main container */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Content block */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2; /* Ensure content appears above background elements */
+}
+
+/* Title */
+.title {
+    font-size: 70px; /* Slightly increase font size */
+    margin-bottom: 20px;
+    line-height: 1.2; /* Control line-height for better spacing */
+}
+
+.title h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.special_h1 {
+    background: linear-gradient(130deg, #ffffff, #ffffff, #7e5e2c, #e8bc4d, #e8bc4d, #e8bc4d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: -5px !important; /* Reduce the gap between title lines */
+}
+
+/* Paragraph */
+.paragraph {
+    margin: 0 0 55px 0;
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+/* Join Button */
+.joinButton {
+    display: inline-flex;
+    height: 56px;
+    padding: 20px 68px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #EBA900 -6.86%, #FFF 103.43%);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+    margin-bottom: 40px;
+}
+
+.joinButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Partners Wrapper */
+.partnersWrapper {
     margin-top: 5rem; /* Push to the bottom of the content */
     display: flex;
     justify-content: flex-start; /* Align content to the left */
     align-items: center; /* Vertically center the content */
-  }
-  
-  
-  @media only screen and (max-width: 1026px) {
-      .container {
-          padding: 0 30px;
-      }
-  
-      .content {
-          max-width: 100%;
-      }
-  
-      .title {
-          font-size: 45px;
-      }
-  
-      .paragraph {
-          font-size: 18px;
-      }
-  
-      .betLounge_section {
-          padding: 30px 0;
-      }
-  }
-  
-  @media only screen and (max-width: 768px) {
-      .title {
-          font-size: 36px;
-      }
-  
-      .paragraph {
-          font-size: 16px;
-      }
-  
-      .joinButton {
-          padding: 15px 40px;
-          font-size: 12px;
-      }
-  }
-  
+}
+
+/* Responsive adjustments for different screen sizes */
+@media only screen and (max-width: 1026px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .betLounge_section {
+        padding: 30px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .joinButton {
+        padding: 15px 40px;
+        font-size: 12px;
+    }
+}
+
+/* Roulette Image Styling */
+.rouletteImage {
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the section */
+    right: -100px; /* Move it towards the right */
+    width: 30vw; /* Make the width responsive based on viewport width */
+    max-width: 900px; /* Limit the maximum width */
+    z-index: 1; /* Keep behind the content */
+    opacity: 0.9; /* Slight transparency */
+}
+
+/* Adjust positioning for smaller screen sizes */
+@media only screen and (max-width: 1024px) {
+    .rouletteImage {
+        width: 40vw; /* Adjust the size for tablets */
+        right: -50px; /* Adjust position */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rouletteImage {
+        width: 50vw; /* Adjust the size for small tablets/large phones */
+        right: -30px; /* Adjust position */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rouletteImage {
+        width: 60vw; /* Adjust the size for smaller phones */
+        right: 0; /* Keep it within the viewport */
+    }
+}

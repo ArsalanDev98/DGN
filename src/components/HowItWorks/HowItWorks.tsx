@@ -11,12 +11,12 @@ const HowItWorks: React.FC = () => {
         },
         {
             title: "Custom PVP Matching",
-            description: "Group owners can then use the private dm side of the bot to create and organize the matches. The bot will then prompt the owner to create different possible outcomes of the match. Once a match pool is created, it will show up in your menu. When you want to start the match process, you can then click Activate. You can also stop the match process by clicking Close.",
+            description: "Group owners utilize the bot’s private DM to organize matches and set various outcomes. Once the match pool is created, it appears in the menu for easy access. Owners can then activate or close the match process with a click.",
             image: "/assets/NewWeb/Assets/CardDice.png",
         },
         {
             title: "Get Rewarded",
-            description: "Once the results are in and the outcome is clear, the group owner can then go into the bot and Choose Outcome. Once the outcome is chosen the bot will automatically pay out the winners. Check your balance!",
+            description: "Once the results are finalized and the outcome is clear, the group owner selects the outcome in the bot. The bot then automatically processes the payouts to the winners. You can check your balance to see the updated amounts.",
             image: "/assets/NewWeb/Assets/CardPokerTable2.png",
         },
     ];
