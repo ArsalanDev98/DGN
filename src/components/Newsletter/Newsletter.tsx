@@ -7,12 +7,12 @@ const Newsletter: React.FC = () => {
       <div className={styles.newsletterContainer}>
         <div className={styles.newsletterContent}>
           <div className={styles.newsletterLeft}>
-            <h2>Join Our Newsletter! </h2>
+            <h2>Subscribe to our Newsletter!</h2>
             <p>
-              Enjoying the bot? Stay updated with the latest news and updates
-              for Decentralized Gaming Network.
+              Stay up-to-date with evrything happening in the DGN community!
             </p>
           </div>
+          <button className={styles.subscribeButton}>Subscribe</button>
         </div>
       </div>
     </section>
