@@ -1,89 +1,153 @@
 .howSection {
-  background-image: url('/assets/PNG/H2U/Background/page.png');
+  background-image: url("/assets/NewWeb/Background/HowToUseBackground.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.howContainer {
+  padding: 50px 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.introText {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Flex container for steps */
+.stepsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures space between columns */
+  gap: 30px;
+  width: 100%;
+  padding: 0 230px;
+}
+
+/* Each step card */
+.step {
+  background-color: rgba(12, 12, 12, 0.9);
+  border: 1px solid #715225;
+  border-radius: 70px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px); /* Two columns with gap accounted */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.step p {
+  color: #fff;
+}
+
+/* Step Header */
+.stepHeader {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Circular number for the steps */
+.stepNumber {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%; /* Circular shape */
+  background-color: #0c0c0c; /* Fill color */
+  border: 0.583px solid #eba900; /* Border color and stroke width */
+  font-size: 1.5rem; /* Adjust font size for better fit */
+  font-weight: bold;
+  color: #fff; /* White text color for contrast */
+  margin-right: 20px; /* Space between the number and the step title */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.stepImage {
+  width: 90%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.step a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.step a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1024px) {
+  .stepsContainer {
+    padding: 0 100px;
+  }
 
   .howContainer {
-    padding: 50px 20px;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+    padding: 50px 50px;
   }
 
   .header {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-family: "Berkshire Swash", cursive;
-  }
-
-  .highlightImage {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 200px;
-  }
-
-  .introText {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-  }
-
-  .stepsContainer {
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    font-size: 2rem;
   }
 
   .step {
-    background-color: rgba(12, 12, 12, 0.9);
-    border: 1px solid #715225;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: left;
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: calc(50% - 20px); /* Adjust for smaller screens */
   }
+}
 
-  .stepHeader {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .stepHighlight {
-    margin-bottom: 10px;
-    width: 100px;
+@media only screen and (max-width: 768px) {
+  .stepsContainer {
+    flex-direction: column;
+    padding: 0 30px;
   }
 
   .stepImage {
-    width: 90%;
-    max-width: 500px;
-    margin: 10px 0;
+    width: 100%;
   }
 
-  .step p {
-    font-size: 1rem;
+  .howContainer {
+    padding: 30px 20px;
   }
 
-  .step a {
-    color: gold;
-    text-decoration: none;
-    font-weight: bold;
+  .header {
+    font-size: 1.8rem;
   }
 
-  .step a:hover {
-    text-decoration: underline;
+  .step {
+    width: 100%; /* Stack cards vertically on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 1.5rem;
   }
 }
