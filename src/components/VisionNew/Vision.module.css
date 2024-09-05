@@ -1,5 +1,7 @@
 .visionSection {
-  background-color: #0c0c0c;
+  background: url("/assets/NewWeb/Background/VisionBackground.png");
+  background-size: cover;
+  background-position: center;
   padding: 100px 0;
 }
 
@@ -8,55 +10,315 @@
   margin: 0 auto;
   padding: 0 230px;
   display: flex;
-  justify-content: space-between; /* Space between text and paragraph */
-  align-items: flex-start; /* Align from the top to keep text from shrinking */
+  justify-content: center;
 }
 
-.visionText {
-  max-width: 60%;
+.visionContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
 }
 
-.visionText h1 {
+.visionContentWrapper h1 {
   font-size: 4rem;
   line-height: 1.2;
   font-weight: 700;
   color: #fff;
   margin: 0;
+  flex: 2;
 }
 
-.visionText .highlight {
+.visionContentWrapper .highlight {
   background: linear-gradient(180deg, #eba900 -6.86%, #fff 103.43%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.visionParagraph {
-  max-width: 35%;
+.visionContentWrapper .visionParagraph {
   font-size: 1.25rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0; /* Remove default margins */
+  margin: 0;
+  flex: 1;
+  max-width: 400px;
+}
+
+.introductionContainer {
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 0 230px;
+  display: flex;
+  justify-content: center;
+}
+
+.introductionCard {
+  background: rgba(217, 217, 217, 0.04); /* Semi-transparent background */
+  border-radius: 48px; /* Rounded corners */
+  border: 1px solid #eba900; /* Golden border */
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  backdrop-filter: blur(42px); /* Blur background for a frosted glass effect */
+}
+
+.introductionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.introductionIconCircle {
+  width: 78px;
+  height: 78px;
+  background-color: #0c0c0c;
+  border: 1px solid #eba900;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.introductionIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.introductionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.introductionParagraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Core Features Section */
+.coreFeaturesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center the core features vertically */
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 50px 230px;
+}
+
+/* Core Features Text and Logo */
+.coreFeaturesContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  max-width: 500px;
+  margin-right: 15%;
+}
+
+.coreFeaturesLogoWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.coreFeaturesIconCircle {
+  width: 78px;
+  height: 78px;
+  background-color: #0c0c0c;
+  border: 1px solid #eba900;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.coreFeaturesIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.coreFeaturesTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.coreFeaturesParagraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Card Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 30px;
+  flex: 2;
+}
+
+.featureCard {
+  background-color: rgba(12, 12, 12, 0.9);
+  border-radius: 20px;
+  border: 1px solid #715225;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.featureCardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.featureCardNumber {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eba900;
+  color: #0c0c0c;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.featureCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.featureCardParagraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Potential Benefits */
+.potentialBenefitsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 50px 230px;
+}
+
+/* Potential Benefits Text and Logo */
+.potentialBenefitsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  max-width: 500px;
+  margin-right: 15%;
+}
+
+.potentialBenefitsLogoWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.potentialBenefitsIconCircle {
+  width: 78px;
+  height: 78px;
+  background-color: #0c0c0c;
+  border: 1px solid #eba900;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.potentialBenefitsIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.potentialBenefitsTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.potentialBenefitsParagraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Responsive adjustments */
 @media only screen and (max-width: 1024px) {
   .visionContainer {
-    flex-direction: column;
     padding: 0 100px;
   }
 
-  .visionText h1 {
-    font-size: 3rem;
+  .visionContentWrapper {
+    flex-direction: column;
     text-align: center;
-    max-width: 100%;
   }
 
-  .visionParagraph {
+  .visionContentWrapper h1 {
+    font-size: 3rem;
+  }
+
+  .visionContentWrapper .visionParagraph {
     font-size: 1.1rem;
-    max-width: 100%;
-    text-align: center;
     margin-top: 20px;
+  }
+
+  .introductionContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introductionIconWrapper {
+    margin-bottom: 20px;
+  }
+
+  .introductionTitle {
+    font-size: 1.5rem;
+  }
+
+  .coreFeaturesContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .coreFeaturesContent {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .potentialBenefitsContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .potentialBenefitsContent {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -65,21 +327,41 @@
     padding: 0 30px;
   }
 
-  .visionText h1 {
+  .visionContentWrapper h1 {
     font-size: 2.5rem;
   }
 
-  .visionParagraph {
+  .visionContentWrapper .visionParagraph {
     font-size: 1rem;
+  }
+
+  .introductionTitle {
+    font-size: 1.4rem;
+  }
+
+  .coreFeaturesTitle {
+    font-size: 1.5rem;
+  }
+
+  .featureCardTitle {
+    font-size: 1.1rem;
+  }
+
+  .featureCardParagraph {
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .visionText h1 {
+  .visionContentWrapper h1 {
     font-size: 2rem;
   }
 
-  .visionParagraph {
+  .visionContentWrapper .visionParagraph {
     font-size: 1rem;
+  }
+
+  .introductionTitle {
+    font-size: 1.2rem;
   }
 }
