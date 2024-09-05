@@ -7,13 +7,6 @@ import chuniGif from "/assets/PNG/INCENTIVE/Gifs/chuni.gif";
 import nicoImage from "/assets/PNG/INCENTIVE/Images/nicomachiaveli.png";
 import elevatedGif from "/assets/PNG/HOMEPAGE/Gifs/elevated.gif";
 import tomImage from "/assets/PNG/HOMEPAGE/Images/code.png";
-import nicoImage2 from "/assets/NewWeb/Assets/nico.jpg";
-import nicoImage3 from "/assets/NewWeb/Assets/nico2.jpg";
-import nicoImage4 from "/assets/NewWeb/Assets/nico3.jpg";
-import nicoImage5 from "/assets/NewWeb/Assets/nico4.jpg";
-import nicoImage6 from "/assets/NewWeb/Assets/nico5.jpg";
-import nicoImage7 from "/assets/NewWeb/Assets/nico6.jpg";
-import nicoImage8 from "/assets/NewWeb/Assets/nico7.jpg";
 
 const teamMembers = [
   {
@@ -30,7 +23,7 @@ const teamMembers = [
     title: "CSO/Growth",
     description:
       "Real estate investor, 7 years experience in crypto, onboarded $100M+ companies into web3, web3 strategist for high end projects.",
-    image: nicoImage2,
+    image: nicoImage,
     icons: [xIcon, telegramIcon, linkedinIcon],
     urls: [
       "https://x.com/0xnicott",
