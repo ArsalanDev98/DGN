@@ -17,9 +17,9 @@ const Layout: React.FC = () => {
     <>
       <div ref={topRef} />
       <header>
-        <Navbar />
       </header>
       <main>
+        <Navbar />
         <Outlet />
       </main>
       <footer>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Faq.module.css';
-import highlightImage from '/assets/PNG/ROADMAP/Images/highlight.png';
+import FaqRoulette from '/assets/NewWeb/Assets/FaqRoulette.svg'; // Make sure the path is correct
 
 const faqData = [
   {
@@ -35,19 +35,28 @@ const Faq: React.FC = () => {
   return (
     <section className={styles.faqSection}>
       <div className={styles.faqContainer}>
-        <h1 className={styles.faqHeader}>Frequently Asked Questions</h1>
-        <img src={highlightImage} alt="highlight" className={styles.highlightImage} />
-        <div className={styles.faqList}>
-          {faqData.map((faq, index) => (
-            <div
-              key={index}
-              className={`${styles.faqItem} ${openIndex === index ? styles.open : ''}`}
-              onClick={() => toggleFaq(index)}
-            >
-              <h3>{faq.question}</h3>
-              <p>{faq.answer}</p>
-            </div>
-          ))}
+        <div className={styles.leftContent}>
+          <h1 className={styles.faqHeader}>Frequently Asked Questions</h1>
+          <p className={styles.paragraph}>
+            Find answers to common questions about Decentralized Gaming Network (DGN) and how it works in our FAQ section.
+          </p>
+          {/* Add the roulette SVG below the paragraph */}
+          <img src={FaqRoulette} alt="Faq Roulette" className={styles.faqRouletteImage} />
+        </div>
+
+        <div className={styles.rightContent}>
+          <div className={styles.faqList}>
+            {faqData.map((faq, index) => (
+              <div
+                key={index}
+                className={`${styles.faqItem} ${openIndex === index ? styles.open : ''}`}
+                onClick={() => toggleFaq(index)}
+              >
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

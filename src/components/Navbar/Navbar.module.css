@@ -48,14 +48,25 @@
 .logoText {
   font-size: 1em;
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(130deg, #ffffff, #7e5e2c, #e8bc4d);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   font-weight: 500;
-  margin-left: 10px;
-  line-height: 1.2; /* Add this to control the spacing between lines */
-  white-space: pre-line; /* Allows breaking the text into two lines */
+  line-height: 1.2;
+  white-space: pre-line;
+
+  /* Gradient */
+  background: linear-gradient(130deg, 
+    #E3A455 0%, 
+    #F6DBA6 12.5%, 
+    #FFEBC3 25%, 
+    #F0BE79 37.5%, 
+    #8F653B 50%, 
+    #673D22 62.5%, 
+    #BA7F3B 75%, 
+    #EEBC70 87.5%, 
+    #3F1F0F 100%);
+  
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent; /* Hide the original text color */
 }
 
 .logoText span {
