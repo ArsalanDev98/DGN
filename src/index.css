@@ -9,7 +9,7 @@ body {
   overflow-y: auto;
   background-image: url("/assets/NewWeb/Background/Background1.png");
   background-size: cover;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   box-sizing: border-box;
 }
@@ -25,5 +25,4 @@ header {
   z-index: 1000;
   position: sticky;
   display: block;
-
 }

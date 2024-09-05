@@ -1,161 +1,204 @@
 /* BetLounge Section */
 .betLounge_section {
-    width: 100%;
-    padding: 100px 0;
-    min-height: 100vh; /* Ensure full viewport height */
-    display: flex;
-    align-items: flex-start; /* Aligns content with the navbar logo */
-    justify-content: flex-start; /* Aligns content to the left */
-    position: relative; /* Needed for positioning the roulette image */
+  width: 100%;
+  padding: 100px 0;
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  align-items: flex-start; /* Aligns content with the navbar logo */
+  justify-content: flex-start; /* Aligns content to the left */
+  position: relative; /* Needed for positioning the roulette image */
 }
 
 /* Main container */
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Content block */
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Align content to the left */
-    z-index: 2; /* Ensure content appears above background elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the left */
+  z-index: 2; /* Ensure content appears above background elements */
 }
 
 /* Title */
 .title {
-    margin-bottom: 20px;
-    line-height: 1.2; /* Control line-height for better spacing */
-    background: linear-gradient(130deg, #ffffff, #ffffff, #7e5e2c, #e8bc4d, #e8bc4d, #e8bc4d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-top: -5px !important; /* Reduce the gap between title lines */
+  margin-bottom: 20px;
+  line-height: 1.2; /* Control line-height for better spacing */
+  background: linear-gradient(
+    130deg,
+    #ffffff,
+    #ffffff,
+    #7e5e2c,
+    #e8bc4d,
+    #e8bc4d,
+    #e8bc4d
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: -5px !important; /* Reduce the gap between title lines */
 }
 
 .title h1 {
-    font-size: 70px;
-    text-align: left; /* Ensure the title is aligned to the left */
-    margin: 0;
-    letter-spacing: 1px;
-    background: linear-gradient(130deg, #ffffff, #ffffff, #7e5e2c, #e8bc4d, #e8bc4d, #e8bc4d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-top: -5px !important; /* Reduce the gap between title lines */
+  font-size: 70px;
+  text-align: left; /* Ensure the title is aligned to the left */
+  margin: 0;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    130deg,
+    #ffffff,
+    #ffffff,
+    #7e5e2c,
+    #e8bc4d,
+    #e8bc4d,
+    #e8bc4d
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: -5px !important; /* Reduce the gap between title lines */
 }
-
 
 /* Paragraph */
 .paragraph {
-    margin: 0 0 55px 0;
-    font-size: 24px;
-    font-family: Raleway, sans-serif;
-    color: rgba(255, 255, 255, 0.70);
+  margin: 0 0 55px 0;
+  font-size: 24px;
+  font-family: Raleway, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Join Button */
 .joinButton {
-    display: inline-flex;
-    height: 56px;
-    padding: 20px 68px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: linear-gradient(180deg, #EBA900 -6.86%, #FFF 103.43%);
-    color: #000;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-self: flex-start;
-    margin-bottom: 40px;
+  display: inline-flex;
+  height: 56px;
+  padding: 20px 68px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #eba900 -6.86%, #fff 103.43%);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+  margin-bottom: 40px;
 }
 
 .joinButton:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Partners Wrapper */
 .partnersWrapper {
-    margin-top: 5rem; /* Push to the bottom of the content */
-    display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center; /* Vertically center the content */
+  margin-top: 5rem; /* Push to the bottom of the content */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
 }
 
 /* Responsive adjustments for different screen sizes */
 @media only screen and (max-width: 1026px) {
-    .container {
-        padding: 0 30px;
-    }
+  .container {
+    padding: 0 30px;
+  }
 
-    .content {
-        max-width: 100%;
-    }
+  .content {
+    max-width: 100%;
+  }
 
-    .title {
-        font-size: 45px;
-    }
+  .title h1 {
+    font-size: 45px;
+  }
 
-    .paragraph {
-        font-size: 18px;
-    }
+  .paragraph {
+    font-size: 18px;
+  }
 
-    .betLounge_section {
-        padding: 30px 0;
-    }
+  .betLounge_section {
+    padding: 50px 0; /* Reduced padding for mobile */
+    min-height: auto; /* Remove forced 100vh to allow scaling */
+  }
+
+  /* Move partners section up */
+  .partnersWrapper {
+    margin-top: 3rem; /* Move it closer to the main content */
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .title {
-        font-size: 36px;
-    }
+  .title h1 {
+    font-size: 36px;
+  }
 
-    .paragraph {
-        font-size: 16px;
-    }
+  .paragraph {
+    font-size: 16px;
+  }
 
-    .joinButton {
-        padding: 15px 40px;
-        font-size: 12px;
-    }
+  .joinButton {
+    padding: 15px 40px;
+    font-size: 12px;
+  }
+
+  /* Move partners section up */
+  .partnersWrapper {
+    margin-top: 2rem; /* Move it further up for mobile */
+  }
+
+  .betLounge_section {
+    padding: 30px 0; /* Reduce the padding for small screens */
+  }
 }
 
 .rouletteImage {
-    position: absolute;
-    bottom: 0;
-    right: -200px; /* Move it more to the right */
-    width: 55vw; /* Increase the width to make it larger */
-    max-width: 1200px; /* Set a larger maximum width */
-    z-index: 1;
-    opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  right: -200px; /* Move it more to the right */
+  width: 55vw; /* Increase the width to make it larger */
+  max-width: 1200px; /* Set a larger maximum width */
+  z-index: 1;
+  opacity: 0.9;
 }
-
 
 /* Adjust positioning for smaller screen sizes */
 @media only screen and (max-width: 1024px) {
-    .rouletteImage {
-        width: 40vw; /* Adjust the size for tablets */
-        right: -50px; /* Adjust position */
-    }
+  .rouletteImage {
+    width: 40vw; /* Adjust the size for tablets */
+    right: -50px; /* Adjust position */
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .rouletteImage {
-        width: 50vw; /* Adjust the size for small tablets/large phones */
-        right: -30px; /* Adjust position */
-    }
+  .rouletteImage {
+    width: 50vw; /* Adjust the size for small tablets/large phones */
+    right: -30px; /* Adjust position */
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .rouletteImage {
-        width: 60vw; /* Adjust the size for smaller phones */
-        right: 0; /* Keep it within the viewport */
-    }
+  .rouletteImage {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  /* Adjust title font-size further down */
+  .title h1 {
+    font-size: 28px;
+  }
+
+  /* Move partners section further up */
+  .partnersWrapper {
+    margin-top: 1.5rem;
+  }
+
+  .betLounge_section {
+    padding: 20px 0; /* Further reduce padding for very small screens */
+    min-height: auto; /* Allow it to adjust to the content size */
+  }
 }

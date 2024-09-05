@@ -1,6 +1,6 @@
 .faqSection {
   padding: 60px 0;
-  background-image: url('/assets/NewWeb/Background/FaqBackground.png');
+  background-image: url("/assets/NewWeb/Background/FaqBackground.png");
   background-size: cover;
   background-position: center;
 }
@@ -13,7 +13,7 @@
   max-width: 1440px;
   margin: 0 auto;
   border-radius: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px); /* Apply blur to the background */
   -webkit-backdrop-filter: blur(10px); /* Support for Safari */
 }
@@ -31,7 +31,7 @@
   text-align: left;
   font-size: 3rem;
   margin-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
@@ -41,11 +41,11 @@
 }
 
 .paragraph {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   line-height: 170%;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
 
@@ -84,14 +84,14 @@
 }
 
 .faqItem h3::after {
-  content: '+';
+  content: "+";
   font-size: 1.5rem;
   font-weight: bold;
   transition: transform 0.3s ease;
 }
 
 .faqItem.open h3::after {
-  content: '-';
+  content: "-";
 }
 
 .faqItem p {
@@ -101,7 +101,7 @@
   font-size: 1rem;
   line-height: 1.5;
   margin-top: 15px;
-  color: #BCBCC3;
+  color: #bcbcc3;
   transition: opacity 0.3s ease, height 0.3s ease;
 }
 

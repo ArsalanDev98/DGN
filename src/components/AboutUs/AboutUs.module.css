@@ -1,93 +1,147 @@
 .aboutUsSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 60px 0;
-    font-family: 'Raleway', sans-serif;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  background-color: #0a0501;
+}
+
+/* Main container */
+.aboutUsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px; /* Gap between the left and right columns */
+  max-width: 1440px;
+  width: 100%;
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  padding-bottom: 60px; /* Add padding to avoid leaking into the next section */
+}
+
+/* Left Column */
+.leftColumn {
+  flex: 1;
+  max-width: 50%; /* Left column takes up half the available space */
+}
+
+.leftColumn img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Right Column */
+.rightColumn {
+  flex: 1;
+  max-width: 45%; /* Right column takes up slightly less space */
+  color: #fff;
+}
+
+.rightColumn h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+  text-align: left;
+}
+
+.rightColumn p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #bcbcc3;
+  text-align: left;
+}
+
+/* Highlight Line */
+.rightColumn .highlight {
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #e8bc4d;
+  margin-bottom: 24px;
+}
+
+/* Ensure separation between AboutUs and HowItWorks sections */
+.aboutUsSection + .howItWorksSection {
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .aboutUsContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align both columns from the top */
-    gap: 100px; /* Increase the gap between the columns */
-    max-width: 1440px;
-    width: 100%;
-    max-height: 670px;
+    flex-direction: column;
+    align-items: center; /* Center the columns */
+    text-align: center;
+    gap: 20px;
+    padding: 0 30px; /* Match the padding as in BetLounge */
   }
-  
+
   .leftColumn {
-    flex: 1;
-    max-width: 50%; /* Ensure the left column takes up half the available space */
+    max-width: 100%;
+    order: -1; /* Place image above text */
+    margin-bottom: 20px;
   }
-  
+
   .leftColumn img {
-    width: 100%;
-    height: auto; /* Ensure the image maintains its aspect ratio */
-    max-height: 100%;
-    object-fit: cover; /* Cover the space nicely */
+    width: 80%; /* Reduce image size on mobile */
+    margin: 0 auto;
   }
-  
+
   .rightColumn {
-    flex: 1;
-    max-width: 45%; /* Ensure the right column takes up half the available space */
-    color: #fff;
+    max-width: 100%;
+    text-align: center;
   }
-  
+
   .rightColumn h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #FFF;
-    text-align: left; /* Align the heading to the left */
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
   }
-  
+
   .rightColumn p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    color: #BCBCC3;
-    text-align: left; /* Align the text to the left */
+    font-size: 1rem; /* Reduce font size */
   }
-  
-  .rightColumn .highlight {
-    display: block;
-    width: 100px;
-    height: 5px;
-    background-color: #e8bc4d;
-    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .rightColumn h1 {
+    font-size: 2rem; /* Further reduce font size for small screens */
   }
-  
-  /* Ensure the HowItWorks section stays separate */
-  .aboutUsSection + .howItWorksSection {
-    margin-top: 40px;
+
+  .rightColumn p {
+    font-size: 0.9rem; /* Smaller text for mobile screens */
   }
-  
-  @media (max-width: 1024px) {
-    .aboutUsContainer {
-      flex-direction: column;
-      text-align: center;
-      align-items: center; /* Center the columns for mobile screens */
-      gap: 20px;
-    }
-  
-    .leftColumn {
-      max-width: 100%;
-      order: -1; /* Place the image above the text on mobile */
-      margin-bottom: 20px;
-    }
-  
-    .leftColumn img {
-      width: 80%;
-      margin: 0 auto;
-    }
-  
-    .rightColumn {
-      max-width: 100%;
-      text-align: center;
-    }
+
+  .leftColumn img {
+    width: 70%; /* Scale the image down more for smaller screens */
   }
-  
+
+  .aboutUsSection {
+    padding: 40px 0; /* Reduce padding for small screens */
+  }
+
+  .aboutUsContainer {
+    gap: 15px; /* Reduce gap between columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUsSection {
+    padding-bottom: 0;
+  }
+  .rightColumn h1 {
+    font-size: 1.8rem; /* Even smaller for very small screens */
+  }
+
+  .rightColumn p {
+    font-size: 0.85rem; /* Adjust paragraph font size */
+  }
+
+  .leftColumn img {
+    width: 60%; /* Further reduce image size */
+  }
+}

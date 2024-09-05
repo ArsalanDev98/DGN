@@ -1,134 +1,214 @@
 .howItWorksSection {
-    padding: 60px 0;
-    margin: 40px 0;
-    /* Remove background-image from here */
-}
-
-.howItWorksContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 100px;
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly darken the cards' background */
-    border-radius: 80px; /* Ensure the content inside is rounded */
-    background-image: url('/assets/NewWeb/Assets/HowItWorksBackground.png'); /* Add background here */
-    background-size: cover;
-    background-position: center;
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px; /* Add padding to prevent overflow */
+}
+
+.howItWorksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1440px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 80px;
+  background-image: url("/assets/NewWeb/Assets/HowItWorksBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px; /* Add padding to prevent overflow */
 }
 
 .header h1 {
-    font-family: Raleway, sans-serif;
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 1px;
-    color: #fff;
-    font-weight: 700;
+  font-family: Raleway, sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .header p {
-    font-family: Raleway, sans-serif;
-    font-size: 1.2rem;
-    line-height: 170%;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.70);
-    margin-top: 16px;
-    max-width: 800px;
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+  line-height: 170%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 24px; /* Add space between h1 and p */
+  padding: 0 20px; /* Add padding to both sides */
+  max-width: 800px;
+  width: 100%; /* Ensure the paragraph takes the full width */
 }
 
+/* Card container - horizontal scrolling */
 .cards {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-    max-height: 640px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scroll */
+  scroll-snap-type: x mandatory; /* Snap scroll effect */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  padding: 20px;
+  scroll-padding: 20px;
+  width: 100%;
+}
 
+.cards::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
 }
 
 .cardContainer {
-    position: relative; /* Keep this to position the overlay */
-    background-image: url('/assets/NewWeb/Assets/HowItWorksCards.png');
-    border-radius: 29px; /* Updated border-radius */
-    border: 1px solid #EBA900; /* Added border from Figma styling */
-    padding: 20px;
-    width: 100%;
-    max-width: 390px; 
-    max-height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden; /* Ensure content stays inside the border */
+  flex: 0 0 80%; /* Each card takes 80% of the screen width */
+  scroll-snap-align: center; /* Snap each card to the center */
+  position: relative;
+  background-image: url("/assets/NewWeb/Assets/HowItWorksCards.png");
+  border-radius: 29px;
+  border: 1px solid #eba900;
+  padding: 20px;
+  max-width: 370px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin: 0 10px; /* Adds margin to both sides */
 }
 
 .cardContainer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* 30% black overlay */
-    z-index: 1; /* Make sure it stays behind the content */
-    border-radius: 29px; /* Match border radius */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* 30% black overlay */
+  z-index: 1;
+  border-radius: 29px;
 }
 
 .cardContainer > * {
-    position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
+  position: relative;
+  z-index: 2;
 }
 
 .imgCard {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    max-height: 215px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  max-height: 215px;
 }
 
 .title {
-    font-family: Raleway, sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-    color: #FFF;
-    font-weight: 700;
+  font-family: Raleway, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .description {
-    font-family: Raleway, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 170%;
-    color: #BCBCC3;
-    margin-bottom: 16px;
-    padding: 0 10px;
-    text-align: left;
+  font-family: Raleway, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 170%;
+  color: #bcbcc3;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  text-align: left;
+  max-width: 95%; /* Limit the paragraph width */
 }
 
-@media only screen and (max-width: 630px) {
-    .howItWorksContainer {
-        padding: 24px 0;
-    }
+/* Mobile responsive - show one card at a time with margin */
+@media only screen and (max-width: 768px) {
+  .howItWorksSection {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Enables snapping */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    gap: 10px;
+    padding: 20px;
+    width: 90%;
+  }
 
-    .imgCard {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+  .cardContainer {
+    flex: 0 0 80%; /* Each card takes 80% of the screen width */
+    scroll-snap-align: center; /* Snap each card to center */
+    margin: 0 5%; /* Add margin to the sides */
+  }
 
-    .title {
-        font-size: 1.5rem;
-    }
+  .imgCard {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 
-    .description {
-        font-size: 0.9rem;
-    }
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.95rem; /* Slightly smaller font size */
+    padding: 0 15px; /* Adjust padding to prevent text overflow */
+    max-width: 100%; /* Ensure it doesn't go beyond container */
+  }
+
+  .header h1 {
+    font-size: 2.5rem; /* Reduce font size for mobile */
+  }
+
+  .header p {
+    font-size: 1.25rem; /* Reduce font size for mobile */
+    max-width: 90%; /* Reduce max-width to fit mobile view */
+    padding: 0 25px; /* Adjust padding for mobile */
+    margin-top: 20px; /* Ensure space between h1 and p */
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cardContainer {
+    flex: 0 0 85%; /* Cards take 85% of screen width on smaller devices */
+    margin: 0 7.5%; /* Adjust margin to center the card */
+  }
+
+  .imgCard {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.85rem; /* Further reduce font size */
+    padding: 0 10px; /* Reduce padding for very small screens */
+  }
+
+  .header h1 {
+    font-size: 2rem; /* Further reduce font size for smaller screens */
+  }
+
+  .header p {
+    font-size: 0.9rem; /* Further reduce paragraph font size */
+    max-width: 95%; /* Make sure the paragraph fits within smaller screens */
+    padding: 0 10px; /* Further reduce padding for very small screens */
+    margin-top: 18px; /* Maintain space between h1 and p */
+  }
 }
