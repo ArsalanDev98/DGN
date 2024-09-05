@@ -53,6 +53,7 @@
 }
 
 .cardContainer {
+    position: relative; /* Keep this to position the overlay */
     background-image: url('/assets/NewWeb/Assets/HowItWorksCards.png');
     border-radius: 29px; /* Updated border-radius */
     border: 1px solid #EBA900; /* Added border from Figma styling */
@@ -68,6 +69,24 @@
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
+    overflow: hidden; /* Ensure content stays inside the border */
+}
+
+.cardContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* 30% black overlay */
+    z-index: 1; /* Make sure it stays behind the content */
+    border-radius: 29px; /* Match border radius */
+}
+
+.cardContainer > * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
 }
 
 .imgCard {
