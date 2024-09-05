@@ -74,4 +74,9 @@ p {
   .newsletterLeft {
     text-align: center;
   }
+
+  .subscribeButton {
+    height: 41px;
+    width: 50px;
+  }
 }
