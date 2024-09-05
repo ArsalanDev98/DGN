@@ -10,8 +10,7 @@ const AboutUs: React.FC = () => {
           <img src="/assets/NewWeb/Assets/AboutUsTable.svg" alt="About Us" />
         </div>
         <div className={styles.rightColumn}>
-          <h1>About Decentralize Gaming Network</h1>
-          <span className={styles.highlight}></span>
+          <h1>About Decentralized Gaming Network</h1>
           <p>
             Decentralized Gaming Network is a unique community interaction concept that gamifies Telegram group chats through a custom gaming bot.
           </p>
