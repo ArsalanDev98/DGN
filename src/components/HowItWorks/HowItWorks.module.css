@@ -1,90 +1,111 @@
+.howItWorksSection {
+    padding: 60px 0;
+    margin: 40px 0;
+    /* Remove background-image from here */
+}
 
 .howItWorksContainer {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 100px;
     max-width: 1920px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darken the cards' background */
+    border-radius: 80px; /* Ensure the content inside is rounded */
+    background-image: url('/assets/NewWeb/Assets/HowItWorksBackground.png'); /* Add background here */
+    background-size: cover;
+    background-position: center;
+}
 
-    .header {
-        width: fit-content;
-        margin-bottom: 24px;
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-        h1 {
-            font-family: "Berkshire Swash";
-            font-size: 3rem;
-            margin: 0;
-            letter-spacing: 1px;
+.header h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 700;
+}
 
-        }
+.header p {
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+    line-height: 170%;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+    margin-top: 16px;
+    max-width: 800px;
+}
 
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
 
-    .cards {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 646px;
-    }
+.cardContainer {
+    background-image: url('/assets/NewWeb/Assets/HowItWorksCards.png');
+    border-radius: 29px; /* Updated border-radius */
+    border: 1px solid #EBA900; /* Added border from Figma styling */
+    padding: 20px;
+    width: 100%;
+    max-width: 390px; 
+    max-height: 640px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+}
 
-    .cardContainer {
-        position: relative;
-    }
+.imgCard {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-height: 215px;
+}
 
-    .imgCard {
-        width: 430px;
-        margin: 20px 10px;
-    }
+.title {
+    font-family: "Berkshire Swash";
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #e8bc4d;
+}
 
-    .title {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Berkshire Swash";
-        background: linear-gradient(130deg, #cca757, #daba5c, #cdaa56, #715225, #9d7a40, #cfac5b, #b99850);
-        background-clip: text;
-        color: transparent;
-        font-size: 35px;
-        width: 80%;
-        text-align: center;
-    }
-
-    .description {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 80%;
-        text-align: center;
-        font-size: 18px;
-        font-family: "Poppins", sans-serif;
-        margin-top: 10px;
-
-    }
+.description {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #BCBCC3;
+    margin-bottom: 16px;
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 630px) {
     .howItWorksContainer {
         padding: 24px 0;
+    }
 
-        .imgCard {
-            width: 320px;
-        }
+    .imgCard {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 
-        .title {
-            font-size: 28px;
-        }
+    .title {
+        font-size: 1.5rem;
+    }
 
-        .description {
-            font-size: 14px;
-        }
+    .description {
+        font-size: 0.9rem;
     }
 }
