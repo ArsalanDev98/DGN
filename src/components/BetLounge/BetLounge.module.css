@@ -122,16 +122,16 @@
     }
 }
 
-/* Roulette Image Styling */
 .rouletteImage {
     position: absolute;
-    bottom: 0; /* Align to the bottom of the section */
-    right: -100px; /* Move it towards the right */
-    width: 30vw; /* Make the width responsive based on viewport width */
-    max-width: 900px; /* Limit the maximum width */
-    z-index: 1; /* Keep behind the content */
-    opacity: 0.9; /* Slight transparency */
+    bottom: 0;
+    right: -200px; /* Move it more to the right */
+    width: 55vw; /* Increase the width to make it larger */
+    max-width: 1200px; /* Set a larger maximum width */
+    z-index: 1;
+    opacity: 0.9;
 }
+
 
 /* Adjust positioning for smaller screen sizes */
 @media only screen and (max-width: 1024px) {
