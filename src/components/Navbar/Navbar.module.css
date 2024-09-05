@@ -1,5 +1,5 @@
 .navbarSection {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .navbar {
@@ -47,23 +47,25 @@
 
 .logoText {
   font-size: 1em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   white-space: pre-line;
 
   /* Gradient */
-  background: linear-gradient(130deg, 
-    #E3A455 0%, 
-    #F6DBA6 12.5%, 
-    #FFEBC3 25%, 
-    #F0BE79 37.5%, 
-    #8F653B 50%, 
-    #673D22 62.5%, 
-    #BA7F3B 75%, 
-    #EEBC70 87.5%, 
-    #3F1F0F 100%);
-  
+  background: linear-gradient(
+    130deg,
+    #e3a455 0%,
+    #f6dba6 12.5%,
+    #ffebc3 25%,
+    #f0be79 37.5%,
+    #8f653b 50%,
+    #673d22 62.5%,
+    #ba7f3b 75%,
+    #eebc70 87.5%,
+    #3f1f0f 100%
+  );
+
   background-clip: text;
   -webkit-background-clip: text; /* For Safari */
   color: transparent; /* Hide the original text color */
@@ -92,9 +94,9 @@
 }
 
 .navLink {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
@@ -115,9 +117,9 @@
 }
 
 .navButton {
-  background: linear-gradient(180deg, #EBA900 -6.86%, #FFF 103.43%);
-  color: #0D0D0C;
-  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #eba900 -6.86%, #fff 103.43%);
+  color: #0d0d0c;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
   padding: 15px 30px;
@@ -135,28 +137,63 @@
 }
 
 @media (max-width: 1355px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px; /* Reduce padding to fit smaller screens */
+  }
+
+  .leftContainer {
+    display: flex;
+    justify-content: flex-start; /* Align everything to the left */
+    width: 100%; /* Allow full width */
+    padding-left: 0; /* Remove extra padding */
+    margin: 0; /* Remove any margin that may cause shifting */
+    gap: 10px; /* Add space between hamburger and logo */
+  }
+
   .hamburger {
-    display: block;
+    display: block; /* Show hamburger on mobile */
+    margin-right: 10px; /* Add space between hamburger and logo */
+  }
+
+  .logoLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 40px; /* Adjust logo size if necessary */
+    width: auto;
+  }
+
+  .logoTextLink {
+    margin-left: 0; /* Remove left margin for better alignment */
   }
 
   .navCenter {
-    display: none;
+    display: none; /* Hide the central navigation on mobile */
   }
 
-  .navContent {
-    display: none;
+  .navCenter.showMenu {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    max-height: none;
     padding-bottom: 20px;
     position: absolute;
     top: 80px;
     left: 0;
-    background-color: rgba(12, 12, 12, 0.9); /* Semi-transparent for the mobile menu */
+    background-color: #0c0c0c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 0 5%;
+    animation: slideDown 0.3s ease-out forwards;
   }
 
-  .navContent.showMenu {
-    display: flex;
+  .navCenter.showMenu .navLink:hover {
+    color: white;
+    background-color: transparent;
   }
 
   .navLinks {
@@ -176,14 +213,14 @@
     border-bottom: 1px solid #fff;
     padding-bottom: 4px;
   }
+
+  .buttonContainer {
+    display: none; /* Hide the whitepaper button on mobile */
+  }
 }
 
 @media (max-width: 950px) {
   .buttonContainer {
     display: none;
-  }
-
-  .buttonLink {
-    display: block;
   }
 }
