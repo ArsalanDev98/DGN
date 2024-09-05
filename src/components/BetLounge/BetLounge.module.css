@@ -1,89 +1,115 @@
-.betLounge_section {
-    background-image: url("/assets/PNG/HOMEPAGE/Background/HOME.png");
-    background-size: cover;
-    padding: 60px 120px;
-}
-
-.container {
+  .betLounge_section {
+      width: 100%;
+      padding: 100px 0;
+      min-height: 100vh; /* Ensure full viewport height */
+      display: flex;
+      align-items: flex-start; /* Aligns content with the navbar logo */
+      justify-content: flex-start; /* Aligns content to the left */
+  }
+  
+  .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+  }
+  
+  .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .title {
+      font-size: 70px; /* Slightly increase font size */
+      margin-bottom: 20px;
+      line-height: 1.2; /* Control line-height for better spacing */
+  }
+  
+  .title h1 {
+      margin: 0;
+      letter-spacing: 1px;
+  }
+  
+  .special_h1 {
+      background: linear-gradient(130deg, #ffffff, #ffffff, #7e5e2c, #e8bc4d, #e8bc4d, #e8bc4d);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-top: -5px !important; /* Reduce the gap between title lines */
+  }
+  
+  .paragraph {
+      margin: 0 0 55px 0;
+      font-size: 24px;
+      font-family: Raleway, sans-serif;
+      color: rgba(255, 255, 255, 0.70);
+  }
+  
+  .joinButton {
+      display: inline-flex;
+      height: 56px;
+      padding: 20px 68px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background: linear-gradient(180deg, #EBA900 -6.86%, #FFF 103.43%);
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      align-self: flex-start;
+      margin-bottom: 40px;
+  }
+  
+  .joinButton:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .partnersWrapper {
+    margin-top: 5rem; /* Push to the bottom of the content */
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.title {
-    font-family: "Berkshire Swash";
-    font-size: 65px;
-
-    h1 {
-        margin: 0;
-        letter-spacing: 1px;
-    }
-}
-
-.special_h1 {
-    background: linear-gradient(130deg, #ffffff, #ffffff, #7e5e2c, #e8bc4d, #e8bc4d, #e8bc4d);
-    background-clip: text;
-    color: transparent;
-    margin-top: -20px !important;
-}
-
-.paragraph {
-    margin: 55px 0;
-    font-size: 24px;
-}
-
-.joinButton {
-    width: 168px;
-    height: 46px;
-    background-image: url("/assets/PNG/HOMEPAGE/Icons/box fill.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    display: inline-block;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    line-height: 40px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.joinButton:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-}
-
-.roulette_wheele {
-    height: 690px;
-    width: 690px;
-    transform: rotate(13deg) translateX(-47px) translateY(10px);
-    margin: auto;
-    display: block;
-}
-
-@media only screen and (max-width: 1026px) {
-    .roulette_wheele {
-        display: none;
-    }
-
-    .title {
-        font-size: 45px;
-    }
-
-    .paragraph {
-        margin: 55px 0;
-        font-size: 18px;
-    }
-
-    .betLounge_section {
-        padding: 30px 30px;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .roulette_wheele {
-        height: 490px;
-        width: 490px;
-    }
-}
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  
+  @media only screen and (max-width: 1026px) {
+      .container {
+          padding: 0 30px;
+      }
+  
+      .content {
+          max-width: 100%;
+      }
+  
+      .title {
+          font-size: 45px;
+      }
+  
+      .paragraph {
+          font-size: 18px;
+      }
+  
+      .betLounge_section {
+          padding: 30px 0;
+      }
+  }
+  
+  @media only screen and (max-width: 768px) {
+      .title {
+          font-size: 36px;
+      }
+  
+      .paragraph {
+          font-size: 16px;
+      }
+  
+      .joinButton {
+          padding: 15px 40px;
+          font-size: 12px;
+      }
+  }
+  

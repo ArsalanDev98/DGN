@@ -1,72 +1,80 @@
 .aboutUsSection {
-    background-image: url("/assets/SVG/Background/ABOUT2.svg");
-    background-size: cover;
-    height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    padding: 60px 0;
+    font-family: 'Raleway', sans-serif;
 
-
+  }
+  
+  .aboutUsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1440px;
+    padding: 0 10%;
+    width: 100%;
+  }
+  
+  .leftColumn {
+    flex: 1;
+    max-width: 600px;
+    color: #fff;
+  }
+  
+  .rightColumn {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .rightColumn img {
+    width: 100%;
+  }
+  
+  .leftColumn h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #FFF;
+  }
+  
+  .leftColumn p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #BCBCC3;
+  }
+  
+  .leftColumn .highlight {
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #e8bc4d;
+    margin-bottom: 24px;
+  }
+  
+  @media (max-width: 1024px) {
     .aboutUsContainer {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10%;
-        gap: 20px;
-        overflow: hidden;
-        max-width: 1920px;
-        margin: 0 auto;
-
-        .leftColumn {
-            text-align: left;
-            max-width: 50%;
-
-            p {
-                margin-top: 24px;
-            }
-
-            .title {
-                width: fit-content;
-
-                h1 {
-                    font-family: "Berkshire Swash";
-                    font-size: 3rem;
-                    margin: 0;
-                    letter-spacing: 1px;
-
-                }
-
-                img {
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-        }
-
-        .aboutUsImage {
-            width: 500px;
-        }
-
-        @media only screen and (max-width: 1026px) {
-            .aboutUsImage {
-                display: none;
-            }
-
-            .leftColumn {
-                max-width: 100%;
-            }
-        }
-
-        @media only screen and (max-width: 1400px) {
-            .aboutUsImage {
-                width: 300px;
-            }
-        }
+      flex-direction: column;
+      text-align: center;
     }
-
-}
-
-/* UHD resolution */
-@media only screen and (min-width: 1080px) {
-    .aboutUsSection {
-        max-height: 1080px;
+  
+    .rightColumn {
+      order: -1;
+      margin-bottom: 20px;
     }
-}
+  
+    .rightColumn img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .leftColumn {
+      max-width: 100%;
+    }
+  }
+  

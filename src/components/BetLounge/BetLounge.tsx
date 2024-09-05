@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './BetLounge.module.css';
 import { Link } from 'react-router-dom';
+import Partners from '../Partners/Partners'; 
 
 const BetLounge: React.FC = () => {
     return (
         <section className={styles.betLounge_section}>
             <div className={styles.container}>
-                <div>
+                <div className={styles.content}>
                     <div className={styles.title}>
                         <h1>Decentralized</h1>
                         <h1 className={styles.special_h1}>Gaming Network</h1>
@@ -16,11 +17,13 @@ const BetLounge: React.FC = () => {
                         Gamifying The Social Landscape Of Telegram
                     </p>
                     <Link to="https://t.me/BetLoungePvP" className={styles.joinButton}>Join</Link>
+                    <div className={styles.partnersWrapper}>
+                        <Partners />
+                    </div>
                 </div>
-                <img className={styles.roulette_wheele} src='/assets/PNG/HOMEPAGE/Gifs/wheel animate.gif' />
             </div>
         </section>
     )
 }
 
-export default BetLounge
+export default BetLounge;

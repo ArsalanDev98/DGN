@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react';
 import BetLounge from '../components/BetLounge/BetLounge';
-import Partners from '../components/Partners/Partners';
 import AboutUs from '../components/AboutUs/AboutUs';
 import HowItWorks from '../components/HowItWorks/HowItWorks';
 import Faq from '../components/Faq/Faq';
@@ -14,7 +13,6 @@ const HomePage: React.FC = () => {
   return (
     <>
       <BetLounge />
-      <Partners />
       <AboutUs />
       <HowItWorks />
       <Faq />

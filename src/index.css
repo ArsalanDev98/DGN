@@ -3,12 +3,13 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   /* Prevent horizontal scrolling */
-  overflow-y: auto;
+  overflow-x: hidden;
   /* Allow vertical scrolling */
-  background-color: #000000;
-  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  background-image: url("/assets/NewWeb/Background/Background1.png");
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
   color: white;
   box-sizing: border-box;
 }

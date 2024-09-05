@@ -1,55 +1,58 @@
 .partnersSection {
-    background-image: url('/assets/PNG/HOMEPAGE/Background/PARTNER.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    padding-top: 40px;
+    display: flex;
+    justify-content: center; /* Center the container */
+  }
+  
+  .partnersContainer {
+    display: inline-flex;
+    padding: 16px 40px;
+    align-items: center;
+    gap: 32px;
+    border-radius: 144px;
+    border: 1px solid #EBA900;
+    background: rgba(38, 32, 20, 0.20);
+    max-width: 100%; /* Ensure the container doesn't exceed the width */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .partnerLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partnerIcon {
+    height: 60px; /* Adjust size */
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .partnerIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 1026px) {
     .partnersContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        height: 150px;
-        margin: 0 auto;
-        max-width: 1920px;
+      padding: 12px 24px;
+      gap: 20px;
     }
-
-    .partnersContent {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 1200px;
-        padding: 0 5%;
-    }
-
+  
     .partnerIcon {
-        height: auto;
-        transition: transform 0.3s ease;
-        margin: 0 5%;
+      height: 50px; /* Adjust size for smaller screens */
     }
-
-    .partnerIcon:hover {
-        transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .partnersContainer {
+      padding: 8px 16px;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-
-    @media only screen and (max-width: 1026px) {
-        .partnersContainer {
-            height: 120px;
-        }
-
-        .partnerIcon {
-            height: 60px;
-        }
+  
+    .partnerIcon {
+      height: 40px; /* Further reduce size on smaller screens */
     }
-
-    @media only screen and (max-width: 500px) {
-        .partnersContainer {
-            height: 100px;
-        }
-
-        .partnerIcon {
-            height: 40px;
-        }
-    }
-}
+  }
+  

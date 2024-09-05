@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import logo from '/assets/dgnlogo.png';
+import logo from '/assets/NewWeb/Logo/DGN-Navbar.svg';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,10 +22,14 @@ const Navbar: React.FC = () => {
             <img src={logo} alt="Betz Logo" className={styles.logo} />
           </Link>
           <Link to="/" className={styles.logoTextLink}>
-            <h3 className={styles.logoText}>Decentralized Gaming Network</h3>
+            <h3 className={styles.logoText}>
+              <span>Decentralized</span>
+              <span>Gaming Network</span>
+            </h3>
           </Link>
         </div>
-        <div className={`${styles.navContent} ${menuOpen ? styles.showMenu : ''}`}>
+
+        <div className={styles.navCenter}>
           <ul className={styles.navLinks}>
             <li className={styles.navItem}>
               <Link to="/" className={styles.navLink}>Home</Link>
@@ -45,18 +49,11 @@ const Navbar: React.FC = () => {
             <li className={styles.navItem}>
               <Link to="/incentive" className={styles.navLink}>Incentive Program</Link>
             </li>
-            <li className={styles.navItem}>
-              <Link to="https://bet-lounge.gitbook.io/usdbetz-documents/v/introduction" className={`${styles.navLink} ${styles.buttonLink}`}><span>Whitepaper </span></Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link to="https://t.me/betloungepvp_bot" className={`${styles.navLink} ${styles.buttonLink}`}>Bot</Link>
-            </li>
           </ul>
-
         </div>
+
         <div className={styles.buttonContainer}>
-          <Link to="https://organization-ows.gitbook.io/usdbetz-documents" target="_blank" rel="noopener noreferrer" className={`${styles.navButton} ${styles.whitepaperButton}`}>Whitepaper</Link>
-          <Link to="https://t.me/betloungepvp_bot" target="_blank" rel="noopener noreferrer" className={`${styles.navButton} ${styles.botButton}`}>Bot</Link>
+          <Link to="https://organization-ows.gitbook.io/usdbetz-documents" target="_blank" rel="noopener noreferrer" className={styles.navButton}>Whitepaper</Link>
         </div>
       </nav>
     </section>
