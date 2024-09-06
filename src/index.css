@@ -26,3 +26,8 @@ header {
   position: sticky;
   display: block;
 }
+
+.commonContainer {
+  margin: 0 auto; /* Center the container */
+  padding: 0 13%;
+}
