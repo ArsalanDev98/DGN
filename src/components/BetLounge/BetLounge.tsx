@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./BetLounge.module.css";
 import { Link } from "react-router-dom";
 import Partners from "../Partners/Partners";
-import RouletteImage from "/assets/NewWeb/Assets/Roulette.png";
+import RouletteImage from "/assets/NewWeb/Assets/Roulette2.png";
 
 const BetLounge: React.FC = () => {
   return (

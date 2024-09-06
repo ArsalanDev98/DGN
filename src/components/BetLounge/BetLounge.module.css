@@ -7,6 +7,7 @@
   align-items: flex-start; /* Aligns content with the navbar logo */
   justify-content: flex-start; /* Aligns content to the left */
   position: relative; /* Needed for positioning the roulette image */
+  overflow: hidden; /* Hide any overflow from the image */
 }
 
 /* Main container */
@@ -40,7 +41,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-top: -5px !important; /* Reduce the gap between title lines */
 }
 
 .title h1 {
@@ -60,7 +60,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-top: -5px !important; /* Reduce the gap between title lines */
 }
 
 /* Paragraph */
@@ -101,6 +100,18 @@
   display: flex;
   justify-content: flex-start; /* Align content to the left */
   align-items: center; /* Vertically center the content */
+  z-index: 3;
+}
+
+/* Roulette Image (position behind content) */
+.rouletteImage {
+  position: absolute;
+  bottom: 0;
+  right: -200px; /* Move to the right */
+  width: 55vw;
+  max-width: 1200px;
+  z-index: 1; /* Behind the content */
+  opacity: 0.9;
 }
 
 /* Responsive adjustments for different screen sizes */
@@ -130,6 +141,12 @@
   .partnersWrapper {
     margin-top: 3rem; /* Move it closer to the main content */
   }
+
+  .rouletteImage {
+    width: 40vw;
+    right: -50px;
+    z-index: 1; /* Ensure it's behind the content */
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -154,6 +171,12 @@
   .betLounge_section {
     padding: 30px 0; /* Reduce the padding for small screens */
   }
+
+  .rouletteImage {
+    width: 50vw;
+    right: -30px;
+    z-index: 1; /* Still behind the content */
+  }
 }
 
 .rouletteImage {
@@ -166,24 +189,12 @@
   opacity: 0.9;
 }
 
-/* Adjust positioning for smaller screen sizes */
-@media only screen and (max-width: 1024px) {
-  .rouletteImage {
-    width: 40vw; /* Adjust the size for tablets */
-    right: -50px; /* Adjust position */
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .rouletteImage {
-    width: 50vw; /* Adjust the size for small tablets/large phones */
-    right: -30px; /* Adjust position */
-  }
-}
-
 @media only screen and (max-width: 480px) {
   .rouletteImage {
-    display: none; /* Hide the image on smaller screens */
+    width: 50vw; /* Reduce size on small screens */
+    right: -20px;
+    bottom: 10px; /* Adjust positioning for mobile */
+    z-index: 1; /* Behind content */
   }
 
   /* Adjust title font-size further down */
@@ -199,5 +210,9 @@
   .betLounge_section {
     padding: 20px 0; /* Further reduce padding for very small screens */
     min-height: auto; /* Allow it to adjust to the content size */
+  }
+
+  .title {
+    margin-top: 30px;
   }
 }
