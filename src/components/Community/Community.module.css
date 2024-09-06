@@ -2,49 +2,40 @@
   background-image: url("/assets/NewWeb/Background/CommunityBackground.png");
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
   padding: 100px 0;
 }
 
 .communityContainer {
   background-image: url("/assets/NewWeb/Assets/CommunityCardLayer.png");
-  background-size: cover; /* Ensures entire image is visible */
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  width: 900%;
+  width: 90%;
   max-width: 1440px;
   margin: 0 auto;
   border-radius: 80px;
   border: 1px solid #eba900;
   backdrop-filter: blur(10px);
   height: 541px;
-}
-
-.communityContainer::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%; /* 16:9 aspect ratio, adjust to match the aspect ratio of the image */
+  position: relative;
+  overflow: hidden;
 }
 
 .communityContent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  text-align: center;
-  flex-direction: column;
+  height: 100%;
+  padding: 20px;
 }
 
 .textContent {
-  max-width: 60%;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -59,15 +50,29 @@
   color: #bcbcc3;
 }
 
-@media (max-width: 768px) {
-  .communityContent {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 1024px) {
+  .communityContainer {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
-  .textContent {
-    max-width: 70%;
-    text-align: center;
+  .textContent h1 {
+    font-size: 3rem;
+  }
+
+  .textContent p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .communitySection {
+    padding: 50px 15px;
+  }
+
+  .communityContainer {
+    border-radius: 40px;
   }
 
   .textContent h1 {
@@ -76,5 +81,19 @@
 
   .textContent p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .communitySection {
+    padding: 30px 15px;
+  }
+
+  .textContent h1 {
+    font-size: 2rem;
+  }
+
+  .textContent p {
+    font-size: 0.875rem;
   }
 }

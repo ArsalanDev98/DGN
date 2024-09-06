@@ -103,3 +103,11 @@ p {
 .arrowButton:hover {
   transform: scale(1.1);
 }
+
+/* Media query to show only 1 card at a time on mobile */
+@media (max-width: 768px) {
+  .card {
+    width: 342px; /* Make each card take the full width */
+    height: 284px;
+  }
+}

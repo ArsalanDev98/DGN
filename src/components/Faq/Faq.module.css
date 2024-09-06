@@ -117,10 +117,17 @@
     padding: 20px;
   }
 
+  .leftContent h1 {
+    margin-top: 2%;
+    text-align: center;
+  }
+
   .leftContent,
   .rightContent {
     width: 100%;
     padding: 0;
+    align-items: center;
+    text-align: center;
   }
 
   .faqRouletteImage {
