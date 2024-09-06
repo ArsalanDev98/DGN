@@ -13,13 +13,14 @@ const Navbar: React.FC = () => {
 
   return (
     <section className={styles.navbarSection}>
-      <nav className={styles.navbar}>
+      <nav className={`${styles.navbar} commonContainer`}>
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </div>
+
         <div className={styles.leftContainer}>
-          <div className={styles.hamburger} onClick={toggleMenu}>
-            {menuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
-          </div>
           <Link to="/" className={styles.logoLink}>
-            <img src={logo} alt="Betz Logo" className={styles.logo} />
+            <img src={logo} alt="DGN Logo" className={styles.logo} />
           </Link>
           <Link to="/" className={styles.logoTextLink}>
             <h3 className={styles.logoText}>
@@ -29,9 +30,7 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        <div
-          className={`${styles.navCenter} ${menuOpen ? styles.showMenu : ""}`}
-        >
+        <div className={styles.navCenter}>
           <ul className={styles.navLinks}>
             <li className={styles.navItem}>
               <Link to="/" className={styles.navLink}>
@@ -70,8 +69,42 @@ const Navbar: React.FC = () => {
           >
             Whitepaper
           </Link>
+          <Link to="/bot" className={`${styles.navButton} ${styles.botButton}`}>
+            Bot
+          </Link>
         </div>
       </nav>
+      {menuOpen && (
+        <div className={styles.mobileMenu}>
+          <ul className={styles.mobileNavLinks}>
+            <li className={styles.mobileNavItem}>
+              <Link to="/" className={styles.mobileNavLink}>
+                Home
+              </Link>
+            </li>
+            <li className={styles.mobileNavItem}>
+              <Link to="/vision" className={styles.mobileNavLink}>
+                Vision
+              </Link>
+            </li>
+            <li className={styles.mobileNavItem}>
+              <Link to="/how-to-use" className={styles.mobileNavLink}>
+                How To Use
+              </Link>
+            </li>
+            <li className={styles.mobileNavItem}>
+              <Link to="/roadmap" className={styles.mobileNavLink}>
+                Roadmap
+              </Link>
+            </li>
+            <li className={styles.mobileNavItem}>
+              <Link to="/incentive" className={styles.mobileNavLink}>
+                Incentive Program
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </section>
   );
 };

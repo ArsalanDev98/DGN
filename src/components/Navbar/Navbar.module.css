@@ -3,16 +3,14 @@
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
   height: 80px;
-  padding: 0 11%;
+  width: 100%;
   position: relative;
   top: 0;
-  width: 100%;
   z-index: 1000;
 }
 
@@ -51,8 +49,6 @@
   font-weight: 500;
   line-height: 1.2;
   white-space: pre-line;
-
-  /* Gradient */
   background: linear-gradient(
     130deg,
     #e3a455 0%,
@@ -65,14 +61,13 @@
     #eebc70 87.5%,
     #3f1f0f 100%
   );
-
   background-clip: text;
-  -webkit-background-clip: text; /* For Safari */
-  color: transparent; /* Hide the original text color */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .logoText span {
-  display: block; /* Makes each line a block, forcing a new line */
+  display: block;
 }
 
 .navCenter {
@@ -114,6 +109,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 10px;
 }
 
 .navButton {
@@ -127,7 +123,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -136,91 +131,131 @@
   filter: brightness(1.2);
 }
 
+.botButton {
+  background: #0d0d0c;
+  color: #fff;
+  border: 1px solid #eba900;
+}
+
 @media (max-width: 1355px) {
   .navbar {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 20px; /* Reduce padding to fit smaller screens */
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
   }
 
   .leftContainer {
-    display: flex;
-    justify-content: flex-start; /* Align everything to the left */
-    width: 100%; /* Allow full width */
-    padding-left: 0; /* Remove extra padding */
-    margin: 0; /* Remove any margin that may cause shifting */
-    gap: 10px; /* Add space between hamburger and logo */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row; /* Change to row to align logo and text horizontally */
+    align-items: center;
+    justify-content: center;
+    width: 60%; /* Adjust as needed */
   }
 
   .hamburger {
-    display: block; /* Show hamburger on mobile */
-    margin-right: 10px; /* Add space between hamburger and logo */
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .logoLink {
-    display: flex;
-    align-items: center;
+    margin-right: 8px; /* Add some space between logo and text */
   }
 
   .logo {
-    height: 40px; /* Adjust logo size if necessary */
-    width: auto;
+    height: 30px;
   }
 
   .logoTextLink {
-    margin-left: 0; /* Remove left margin for better alignment */
+    margin-left: 0;
+  }
+
+  .logoText {
+    font-size: 0.8em;
+    text-align: left; /* Align text to the left */
   }
 
   .navCenter {
-    display: none; /* Hide the central navigation on mobile */
-  }
-
-  .navCenter.showMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    max-height: none;
-    padding-bottom: 20px;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: #0c0c0c;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 0 5%;
-    animation: slideDown 0.3s ease-out forwards;
-  }
-
-  .navCenter.showMenu .navLink:hover {
-    color: white;
-    background-color: transparent;
-  }
-
-  .navLinks {
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 10px;
-  }
-
-  .navItem {
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-
-  .navLink {
-    width: 100%;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 4px;
+    display: none;
   }
 
   .buttonContainer {
-    display: none; /* Hide the whitepaper button on mobile */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navButton {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .botButton {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0c0c0c;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobileNavLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobileNavItem {
+    margin-bottom: 15px;
+  }
+
+  .mobileNavLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 
-@media (max-width: 950px) {
-  .buttonContainer {
-    display: none;
+@media (max-width: 480px) {
+  .logo {
+    height: 25px;
+  }
+
+  .logoText {
+    font-size: 0.7em;
+  }
+
+  .navButton {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .leftContainer {
+    width: 70%; /* Increase width for smaller screens if needed */
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

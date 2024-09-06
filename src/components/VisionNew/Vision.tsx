@@ -7,8 +7,8 @@ const Vision: React.FC = () => {
       {/* Vision Section */}
       <div className="commonContainer">
         <div className={styles.visionContentWrapper}>
-          <h1>
-            Decentralized Gaming <br /> Network{" "}
+          <h1 className={styles.visionTitle}>
+            Decentralize Gaming <br /> Network{" "}
             <span className={styles.highlight}>Vision</span>
           </h1>
           <p className={styles.visionParagraph}>

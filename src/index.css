@@ -31,3 +31,9 @@ header {
   margin: 0 auto; /* Center the container */
   padding: 0 13%;
 }
+
+@media (max-width: 1026px) {
+  .commonContainer {
+    padding: 0 5%; /* Adjust this value as needed for smaller screens */
+  }
+}
