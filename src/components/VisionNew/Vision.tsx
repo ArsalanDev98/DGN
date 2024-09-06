@@ -47,7 +47,6 @@ const Vision: React.FC = () => {
 
       {/* Core Features and Card Grid */}
       <div className="commonContainer">
-        {/* Core Features Text and Logo */}
         <div className={styles.coreFeaturesContainer}>
           <div className={styles.coreFeaturesContent}>
             <div className={styles.coreFeaturesLogoWrapper}>
@@ -67,9 +66,7 @@ const Vision: React.FC = () => {
             </p>
           </div>
 
-          {/* Feature Cards */}
           <div className={styles.featuresGrid}>
-            {/* Feature Card 1 */}
             <div className={styles.featureCard}>
               <div className={styles.featureCardHeader}>
                 <div className={styles.featureCardNumber}>1</div>
@@ -83,7 +80,6 @@ const Vision: React.FC = () => {
               </p>
             </div>
 
-            {/* Feature Card 2 */}
             <div className={styles.featureCard}>
               <div className={styles.featureCardHeader}>
                 <div className={styles.featureCardNumber}>2</div>
@@ -96,7 +92,6 @@ const Vision: React.FC = () => {
               </p>
             </div>
 
-            {/* Feature Card 3 */}
             <div className={styles.featureCard}>
               <div className={styles.featureCardHeader}>
                 <div className={styles.featureCardNumber}>3</div>
@@ -109,7 +104,6 @@ const Vision: React.FC = () => {
               </p>
             </div>
 
-            {/* Feature Card 4 */}
             <div className={styles.featureCard}>
               <div className={styles.featureCardHeader}>
                 <div className={styles.featureCardNumber}>4</div>
@@ -128,10 +122,8 @@ const Vision: React.FC = () => {
 
       {/* Benefits Cards and Potential Benefits */}
       <div className="commonContainer">
-        {/* Benefit Cards */}
         <div className={styles.newCardsAndBenefitsContainer}>
           <div className={styles.newCardsGrid}>
-            {/* Benefit Card 1 */}
             <div className={styles.newCard}>
               <div className={styles.newCardHeader}>
                 <div className={styles.newCardNumber}>1</div>
@@ -144,7 +136,6 @@ const Vision: React.FC = () => {
               </p>
             </div>
 
-            {/* Benefit Card 2 */}
             <div className={styles.newCard}>
               <div className={styles.newCardHeader}>
                 <div className={styles.newCardNumber}>2</div>
@@ -157,7 +148,6 @@ const Vision: React.FC = () => {
               </p>
             </div>
 
-            {/* Benefit Card 3 */}
             <div className={`${styles.newCard} ${styles.fullWidthCard}`}>
               <div className={styles.newCardHeader}>
                 <div className={styles.newCardNumber}>3</div>

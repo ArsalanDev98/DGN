@@ -3,7 +3,6 @@
   background-size: cover;
   background-position: center;
   padding: 100px 0;
-
   p {
     color: #fff;
   }
@@ -41,14 +40,15 @@
 }
 
 .visionContentWrapper .visionParagraph {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   margin: 0;
   flex: 1;
   max-width: 400px;
 }
 
+/* Adjustments for mobile view */
 .introductionContainer {
   max-width: 100%;
   display: flex;
@@ -57,20 +57,20 @@
 }
 
 .introductionCard {
-  background: rgba(217, 217, 217, 0.04); /* Semi-transparent background */
-  border-radius: 48px; /* Rounded corners */
-  border: 1px solid #eba900; /* Golden border */
-  padding: 40px;
+  background: rgba(217, 217, 217, 0.04);
+  border-radius: 48px;
+  border: 1px solid #eba900;
+  padding: 20px;
   width: 100%;
   max-width: 1200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-  backdrop-filter: blur(42px); /* Blur background for a frosted glass effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .introductionHeader {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .introductionIconCircle {
@@ -97,26 +97,26 @@
 }
 
 .introductionParagraph {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Core Features Section */
+/* Core Features Section (Desktop) */
 .coreFeaturesContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center the core features vertically */
+  align-items: center;
   min-width: 100%;
   margin: 100px auto;
+  text-align: left; /* Keep text alignment left for desktop */
 }
 
-/* Core Features Text and Logo */
 .coreFeaturesContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 40%;
+  max-width: 40%; /* Keep this width for desktop */
 }
 
 .coreFeaturesLogoWrapper {
@@ -150,15 +150,18 @@
 }
 
 .coreFeaturesParagraph {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
+  max-width: 600px; /* Ensure width stays consistent on desktop */
+  text-align: left;
+  margin: 0; /* No center margin for desktop */
 }
 
-/* Card Grid */
+/* Card Grid (Desktop) */
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
 
@@ -199,12 +202,12 @@
 }
 
 .featureCardParagraph {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Container for the benefits set of cards and potential benefits */
+/* Benefits and Cards */
 .newCardsAndBenefitsContainer {
   display: flex;
   justify-content: space-between;
@@ -213,21 +216,19 @@
   margin: 50px auto;
 }
 
-/* New cards container with a grid */
+/* New Cards */
 .newCardsGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two cards side by side */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  max-width: 100%; /* Remove the 700px constraint */
+  max-width: 50%;
   flex: 1;
 }
 
-/* Span the last card across two columns */
 .fullWidthCard {
-  grid-column: span 2; /* Ensure this spans across both columns */
+  grid-column: span 2;
 }
 
-/* Styles for individual cards */
 .newCard {
   background-color: rgba(12, 12, 12, 0.9);
   border-radius: 20px;
@@ -263,19 +264,19 @@
 }
 
 .newCardParagraph {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Styles for the Potential Benefits section */
+/* Potential Benefits Section */
 .potentialBenefitsContent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex: 1;
-  max-width: 500px;
-  margin-left: 50px; /* To add space between the cards and the content */
+  max-width: 50%;
+  margin-left: 50px;
 }
 
 .potentialBenefitsHeader {
@@ -300,39 +301,25 @@
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .potentialBenefitsParagraph {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Conclusion section */
-.conclusionContainer {
-  max-width: 100%;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .conclusionTitle {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
-  text-decoration: underline;
+  text-decoration-line: underline;
 }
 
 .conclusionParagraph {
-  font-size: 1.25rem;
-  line-height: 1.6;
   color: #fff;
 }
 
 /* Responsive adjustments */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .visionContainer {
     padding: 0 100px;
   }
@@ -351,102 +338,69 @@
     margin-top: 20px;
   }
 
-  .introductionContainer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .introductionIconWrapper {
-    margin-bottom: 20px;
-  }
-
-  .introductionTitle {
-    font-size: 1.5rem;
-  }
-
   .coreFeaturesContainer {
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    text-align: center; /* Center content only on smaller screens */
+    padding: 20px;
   }
 
   .coreFeaturesContent {
-    margin-right: 0;
-    text-align: center;
-    margin-bottom: 30px;
+    max-width: 90%; /* Let it take more space on mobile */
+    margin-bottom: 20px;
+  }
+
+  .coreFeaturesParagraph {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 0 auto; /* Center the paragraph */
+    text-align: justify; /* Justify text on mobile for better readability */
   }
 
   .featuresGrid {
     grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-gap: 20px;
   }
 
-  .newCardsAndBenefitsContainer {
-    flex-direction: column;
+  .featureCard {
+    width: 100%;
+    height: auto; /* Allow the height to adjust to content */
   }
 
   .newCardsGrid {
-    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 
   .potentialBenefitsContent {
-    margin-left: 0; /* Remove margin on smaller screens */
+    margin-left: 0;
     margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .visionContainer {
-    padding: 0 30px;
-  }
-
-  .visionContentWrapper h1 {
-    font-size: 2.5rem;
-  }
-
-  .visionContentWrapper .visionParagraph {
-    font-size: 1rem;
-  }
-
-  .introductionTitle {
-    font-size: 1.4rem;
-  }
-
-  .coreFeaturesTitle {
-    font-size: 1.5rem;
-  }
-
-  .featureCardTitle {
-    font-size: 1.1rem;
-  }
-
-  .featureCardParagraph {
-    font-size: 0.9rem;
-  }
-
-  .potentialBenefitsTitle {
-    font-size: 1.5rem;
-  }
-
-  .newCardTitle {
-    font-size: 1.1rem;
-  }
-
-  .newCardParagraph {
-    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .visionContentWrapper h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .visionContentWrapper .visionParagraph {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
-  .introductionTitle {
-    font-size: 1.2rem;
+  .introductionParagraph {
+    font-size: 0.875rem;
+  }
+
+  .introductionIconCircle {
+    /* width: 50px;
+    height: 50px; */
+  }
+
+  .coreFeaturesContainer {
+    padding: 20px;
+  }
+
+  .coreFeaturesContent {
+    width: 100%;
   }
 
   .potentialBenefitsTitle {
@@ -454,6 +408,31 @@
   }
 
   .newCardParagraph {
+    font-size: 1rem;
+  }
+
+  .featureCard,
+  .newCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .coreFeaturesTitle,
+  .introductionTitle {
+    font-size: 1.4rem;
+  }
+
+  .introductionCard {
+    padding: 15px;
+  }
+
+  .coreFeaturesParagraph {
+    max-width: 100%; /* Full width on very small screens */
+    text-align: justify; /* Justify the text for better mobile readability */
     font-size: 1rem;
   }
 }
