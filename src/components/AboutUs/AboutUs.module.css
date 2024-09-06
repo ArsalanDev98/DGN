@@ -25,12 +25,12 @@
 .leftColumn {
   flex: 1;
   max-width: 50%; /* Left column takes up half the available space */
+  height: auto;
 }
 
 .leftColumn img {
   width: 100%;
   height: auto;
-  max-height: 100%;
   object-fit: cover;
 }
 

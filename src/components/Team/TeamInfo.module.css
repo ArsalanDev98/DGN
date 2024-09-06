@@ -8,6 +8,7 @@
 .cardsContainer {
   display: flex;
   gap: 20px;
+  height: 90%;
   transition: transform 0.5s ease-in-out; /* Smooth scrolling effect */
   will-change: transform;
 }
@@ -18,7 +19,7 @@
   border-radius: 32px;
   overflow: hidden;
   width: 49%;
-  height: 437px;
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #b99850;
   box-sizing: border-box;
