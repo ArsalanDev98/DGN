@@ -1,9 +1,6 @@
 .howItWorksSection {
   padding: 100px 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .header {
@@ -16,13 +13,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
-  max-width: 1440px;
+  max-width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 80px;
   background-image: url("/assets/NewWeb/Assets/HowItWorksBackground.png");
   background-size: cover;
   background-position: center;
+  padding: 5% 5%;
 }
 
 .header {
@@ -138,6 +135,10 @@
     padding-top: 30px;
     padding-bottom: 0;
   }
+
+  .howItWorksContainer {
+    padding: 0%;
+  }
   .cards {
     display: flex;
     overflow-x: auto;
@@ -145,7 +146,7 @@
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     gap: 10px;
     padding: 20px;
-    width: 90%;
+    width: 100%;
   }
 
   .cardContainer {

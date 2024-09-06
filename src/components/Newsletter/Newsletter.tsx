@@ -10,7 +10,7 @@ const Newsletter: React.FC = () => {
             <div className={styles.newsletterLeft}>
               <h2>Subscribe to our Newsletter!</h2>
               <p>
-                Stay up-to-date with evrything happening in the DGN community!
+                Stay up-to-date with everything happening in the DGN community!
               </p>
             </div>
             <button className={styles.subscribeButton}>Subscribe</button>
