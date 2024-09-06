@@ -2,10 +2,8 @@
   background-image: url("/assets/NewWeb/Background/CommunityBackground.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  padding: 100px 0;
 }
 
 .communityContainer {

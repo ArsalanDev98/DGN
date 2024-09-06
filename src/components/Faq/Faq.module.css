@@ -1,5 +1,5 @@
 .faqSection {
-  padding: 60px 0;
+  padding: 100px 0;
   background-image: url("/assets/NewWeb/Background/FaqBackground.png");
   background-size: cover;
   background-position: center;
@@ -10,7 +10,7 @@
   justify-content: space-between; /* Two-column layout */
   align-items: flex-start;
   padding: 50px 100px;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   border-radius: 80px;
   border: 1px solid rgba(255, 255, 255, 0.2);
