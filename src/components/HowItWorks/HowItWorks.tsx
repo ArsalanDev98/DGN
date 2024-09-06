@@ -25,29 +25,27 @@ const HowItWorks: React.FC = () => {
 
   return (
     <section className={styles.howItWorksSection}>
-      <div className="commonContainer">
-        <div className={styles.howItWorksContainer}>
-          <div className={styles.header}>
-            <h1>How it works</h1>
-            <p>
-              Decentralized Gaming Network (DGN) revolutionizes gaming by
-              seamlessly integrating blockchain technology throughout its
-              ecosystem.
-            </p>
-          </div>
-          <div className={styles.cards}>
-            {cards.map((card) => (
-              <div key={card.title} className={styles.cardContainer}>
-                <div className={styles.title}>{card.title}</div>
-                <img
-                  className={styles.imgCard}
-                  src={card.image}
-                  alt={card.title}
-                />
-                <div className={styles.description}>{card.description}</div>
-              </div>
-            ))}
-          </div>
+      <div className={styles.howItWorksContainer}>
+        <div className={styles.header}>
+          <h1>How it works</h1>
+          <p>
+            Decentralized Gaming Network (DGN) revolutionizes gaming by
+            seamlessly integrating blockchain technology throughout its
+            ecosystem.
+          </p>
+        </div>
+        <div className={styles.cards}>
+          {cards.map((card) => (
+            <div key={card.title} className={styles.cardContainer}>
+              <div className={styles.title}>{card.title}</div>
+              <img
+                className={styles.imgCard}
+                src={card.image}
+                alt={card.title}
+              />
+              <div className={styles.description}>{card.description}</div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

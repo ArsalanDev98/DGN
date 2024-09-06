@@ -25,7 +25,6 @@ const BetLounge: React.FC = () => {
             <Partners />
           </div>
         </div>
-        {/* Add the roulette image */}
         <img
           src={RouletteImage}
           alt="Roulette"

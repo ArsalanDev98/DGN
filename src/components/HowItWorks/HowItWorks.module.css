@@ -3,29 +3,24 @@
   width: 100%;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 0 20px; /* Add padding to prevent overflow */
-}
-
 .howItWorksContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 80px;
   background-image: url("/assets/NewWeb/Assets/HowItWorksBackground.png");
   background-size: cover;
   background-position: center;
-  padding: 5% 5%;
+  margin: 0 auto;
+  padding: 3% 0;
 }
 
 .header {
   text-align: center;
   margin-bottom: 40px;
-  padding: 0 20px; /* Add padding to prevent overflow */
+  padding: 0 20px;
 }
 
 .header h1 {
@@ -43,38 +38,28 @@
   line-height: 170%;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
-  margin-top: 24px; /* Add space between h1 and p */
-  padding: 0 20px; /* Add padding to both sides */
+  margin-top: 24px;
+  padding: 0 20px;
   max-width: 800px;
-  width: 100%; /* Ensure the paragraph takes the full width */
-}
-
-/* Card container - horizontal scrolling */
-.cards {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto; /* Enable horizontal scroll */
-  scroll-snap-type: x mandatory; /* Snap scroll effect */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-  padding: 20px;
-  scroll-padding: 20px;
   width: 100%;
 }
 
-.cards::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for a cleaner look */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
 }
 
 .cardContainer {
-  flex: 0 0 80%; /* Each card takes 80% of the screen width */
-  scroll-snap-align: center; /* Snap each card to the center */
-  position: relative;
+  flex: 0 0 calc(33.33% - 40px); /* Three cards per row on larger screens */
+  max-width: 370px;
   background-image: url("/assets/NewWeb/Assets/HowItWorksCards.png");
   border-radius: 29px;
   border: 1px solid #eba900;
   padding: 20px;
-  max-width: 370px;
-  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,8 +67,8 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
+  margin: 20px;
   overflow: hidden;
-  margin: 0 10px; /* Adds margin to both sides */
 }
 
 .cardContainer::before {
@@ -93,7 +78,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* 30% black overlay */
   z-index: 1;
   border-radius: 29px;
 }
@@ -103,33 +87,38 @@
   z-index: 2;
 }
 
+/* Adjust image size and card padding for mobile */
 .imgCard {
+  width: 65%; /* Set image width to 25% of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: none; /* Remove max height constraint */
   margin-bottom: 20px;
+  margin-top: 20px;
   border-radius: 8px;
-  max-height: 215px;
 }
 
 .title {
-  font-family: Raleway, sans-serif;
-  font-size: 1.8rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
   margin-bottom: 12px;
   color: #fff;
   font-weight: 700;
+  text-align: left;
 }
 
 .description {
-  font-family: Raleway, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 170%;
-  color: #bcbcc3;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 16px;
   padding: 0 10px;
   text-align: left;
-  max-width: 95%; /* Limit the paragraph width */
+  max-width: 95%;
 }
 
-/* Mobile responsive - show one card at a time with margin */
+/* Mobile adjustments to reduce card size and image size */
 @media only screen and (max-width: 768px) {
   .howItWorksSection {
     padding-top: 30px;
@@ -137,79 +126,85 @@
   }
 
   .howItWorksContainer {
-    padding: 0%;
+    padding: 0;
   }
+
   .cards {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; /* Enables snapping */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    gap: 10px;
-    padding: 20px;
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 15px;
+    padding: 0;
     width: 100%;
   }
 
   .cardContainer {
-    flex: 0 0 80%; /* Each card takes 80% of the screen width */
-    scroll-snap-align: center; /* Snap each card to center */
-    margin: 0 5%; /* Add margin to the sides */
+    flex: 1;
+    max-width: 100%; /* Ensure cards take full width */
+    padding: 15px; /* Reduce padding for a tighter layout */
+    margin: 10px 0; /* Less margin between cards */
   }
 
   .imgCard {
-    width: 100%;
-    margin-bottom: 15px;
+    width: 25%; /* Maintain 25% width of the container */
+    height: auto; /* Let the height scale automatically */
+    max-height: none; /* No fixed height to ensure scaling */
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Slightly smaller font for title */
   }
 
   .description {
-    font-size: 0.95rem; /* Slightly smaller font size */
-    padding: 0 15px; /* Adjust padding to prevent text overflow */
-    max-width: 100%; /* Ensure it doesn't go beyond container */
+    font-size: 0.95rem;
+    padding: 0 10px;
+    max-width: 100%;
   }
 
   .header h1 {
-    font-size: 2.5rem; /* Reduce font size for mobile */
+    font-size: 2.2rem;
   }
 
   .header p {
-    font-size: 1.25rem; /* Reduce font size for mobile */
-    max-width: 90%; /* Reduce max-width to fit mobile view */
-    padding: 0 25px; /* Adjust padding for mobile */
-    margin-top: 20px; /* Ensure space between h1 and p */
+    font-size: 1.1rem;
+    max-width: 90%;
+    padding: 0 20px;
+    margin-top: 15px;
     margin: auto;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  .cards {
+    width: 90%;
+  }
   .cardContainer {
-    flex: 0 0 85%; /* Cards take 85% of screen width on smaller devices */
-    margin: 0 7.5%; /* Adjust margin to center the card */
+    flex: 1;
+    padding: 12px;
+    margin: 10px 0;
   }
 
   .imgCard {
-    width: 100%;
+    width: 45%; /* Scale image to 25% of the container's width */
+    height: auto; /* Auto height to keep aspect ratio */
   }
 
   .title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .description {
-    font-size: 0.85rem; /* Further reduce font size */
-    padding: 0 10px; /* Reduce padding for very small screens */
+    font-size: 0.85rem;
+    padding: 0 8px;
   }
 
   .header h1 {
-    font-size: 2rem; /* Further reduce font size for smaller screens */
+    font-size: 2rem;
   }
 
   .header p {
-    font-size: 0.9rem; /* Further reduce paragraph font size */
-    max-width: 95%; /* Make sure the paragraph fits within smaller screens */
-    padding: 0 10px; /* Further reduce padding for very small screens */
-    margin-top: 18px; /* Maintain space between h1 and p */
+    font-size: 0.9rem;
+    max-width: 95%;
+    padding: 0 10px;
+    margin-top: 15px;
   }
 }

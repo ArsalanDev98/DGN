@@ -29,11 +29,15 @@ header {
 
 .commonContainer {
   margin: 0 auto; /* Center the container */
-  padding: 0 13%;
+  padding: 0 14%;
 }
 
 @media (max-width: 1026px) {
   .commonContainer {
-    padding: 0 5%; /* Adjust this value as needed for smaller screens */
+    padding: 0 5%; /* Keep it consistent for smaller screens */
+  }
+
+  .howItWorksContainer {
+    padding: 0 5%; /* Adjust padding in the same way for this container */
   }
 }
