@@ -176,15 +176,17 @@ const Vision: React.FC = () => {
 
           {/* Potential Benefits */}
           <div className={styles.potentialBenefitsContent}>
-            <div className={styles.potentialBenefitsIconCircle}>
-              <img
-                src="/assets/NewWeb/Assets/BenefitsLogo.svg"
-                alt="Benefits Icon"
-              />
+            <div className={styles.potentialBenefitsHeader}>
+              <div className={styles.potentialBenefitsIconCircle}>
+                <img
+                  src="/assets/NewWeb/Assets/BenefitsLogo.svg"
+                  alt="Benefits Icon"
+                />
+              </div>
+              <h2 className={styles.potentialBenefitsTitle}>
+                Potential Benefits
+              </h2>
             </div>
-            <h2 className={styles.potentialBenefitsTitle}>
-              Potential Benefits
-            </h2>
             <p className={styles.potentialBenefitsParagraph}>
               Gamifying Telegram group chats with betting bots offers numerous
               advantages for both users and group owners. Additionally, we offer
@@ -195,6 +197,21 @@ const Vision: React.FC = () => {
               for all parties involved.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Conclusion Section */}
+      <div className="commonContainer">
+        <div className={styles.conclusionContainer}>
+          <h2 className={styles.conclusionTitle}>Conclusion</h2>
+          <p className={styles.conclusionParagraph}>
+            The integration of gamified match bots into Telegram group chats
+            marks a dynamic evolution in online community engagement. By merging
+            luck-based gaming and financial management, this innovative approach
+            transforms group interactions into immersive, exciting experiences.
+            As these features gain popularity, gamifying Telegram group chats
+            has the potential to redefine social interaction in the digital age.
+          </p>
         </div>
       </div>
     </section>

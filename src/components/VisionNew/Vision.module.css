@@ -3,6 +3,10 @@
   background-size: cover;
   background-position: center;
   padding: 100px 0;
+
+  p {
+    color: #fff;
+  }
 }
 
 .visionContainer {
@@ -274,6 +278,12 @@
   margin-left: 50px; /* To add space between the cards and the content */
 }
 
+.potentialBenefitsHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .potentialBenefitsIconCircle {
   width: 78px;
   height: 78px;
@@ -287,16 +297,38 @@
 }
 
 .potentialBenefitsTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 10px;
+  margin: 0; /* Remove default margin */
 }
 
 .potentialBenefitsParagraph {
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Conclusion section */
+.conclusionContainer {
+  max-width: 100%;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.conclusionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.conclusionParagraph {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #fff;
 }
 
 /* Responsive adjustments */

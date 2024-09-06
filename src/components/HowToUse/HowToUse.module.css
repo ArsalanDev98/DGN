@@ -32,12 +32,11 @@
 
 /* Flex container for steps */
 .stepsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Ensures space between columns */
-  gap: 30px;
+  column-count: 2;
+  column-gap: 30px;
   width: 100%;
-  padding: 0 230px;
+  max-width: 1200px; /* Adjust based on your design preference */
+  margin: 0 auto;
 }
 
 /* Each step card */
@@ -48,10 +47,11 @@
   padding: 20px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  width: calc(50% - 30px); /* Two columns with gap accounted */
-  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  break-inside: avoid-column;
 }
 
 .step p {
@@ -73,18 +73,18 @@
   align-items: center;
   width: 78px;
   height: 78px;
-  border-radius: 50%; /* Circular shape */
-  background-color: #0c0c0c; /* Fill color */
-  border: 0.583px solid #eba900; /* Border color and stroke width */
-  font-size: 1.5rem; /* Adjust font size for better fit */
+  border-radius: 50%;
+  background-color: #0c0c0c;
+  border: 0.583px solid #eba900;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #fff; /* White text color for contrast */
-  margin-right: 20px; /* Space between the number and the step title */
-  flex-shrink: 0; /* Prevent shrinking */
+  color: #fff;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .stepImage {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   margin: 10px 0;
 }
@@ -106,10 +106,6 @@
 
 /* Responsive adjustments */
 @media only screen and (max-width: 1024px) {
-  .stepsContainer {
-    padding: 0 100px;
-  }
-
   .howContainer {
     padding: 50px 50px;
   }
@@ -117,20 +113,11 @@
   .header {
     font-size: 2rem;
   }
-
-  .step {
-    width: calc(50% - 20px); /* Adjust for smaller screens */
-  }
 }
 
 @media only screen and (max-width: 768px) {
   .stepsContainer {
-    flex-direction: column;
-    padding: 0 30px;
-  }
-
-  .stepImage {
-    width: 100%;
+    column-count: 1;
   }
 
   .howContainer {
@@ -139,10 +126,6 @@
 
   .header {
     font-size: 1.8rem;
-  }
-
-  .step {
-    width: 100%; /* Stack cards vertically on smaller screens */
   }
 }
 
