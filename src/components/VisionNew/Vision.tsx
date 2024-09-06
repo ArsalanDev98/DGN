@@ -66,6 +66,7 @@ const Vision: React.FC = () => {
 
         {/* Feature Cards */}
         <div className={styles.featuresGrid}>
+          {/* Feature Card 1 */}
           <div className={styles.featureCard}>
             <div className={styles.featureCardHeader}>
               <div className={styles.featureCardNumber}>1</div>
@@ -78,6 +79,8 @@ const Vision: React.FC = () => {
               future.
             </p>
           </div>
+
+          {/* Feature Card 2 */}
           <div className={styles.featureCard}>
             <div className={styles.featureCardHeader}>
               <div className={styles.featureCardNumber}>2</div>
@@ -89,6 +92,8 @@ const Vision: React.FC = () => {
               and withdrawing funds.
             </p>
           </div>
+
+          {/* Feature Card 3 */}
           <div className={styles.featureCard}>
             <div className={styles.featureCardHeader}>
               <div className={styles.featureCardNumber}>3</div>
@@ -100,6 +105,8 @@ const Vision: React.FC = () => {
               gaming.
             </p>
           </div>
+
+          {/* Feature Card 4 */}
           <div className={styles.featureCard}>
             <div className={styles.featureCardHeader}>
               <div className={styles.featureCardNumber}>4</div>
@@ -115,26 +122,68 @@ const Vision: React.FC = () => {
         </div>
       </div>
 
-      {/* Potential Benefits Section */}
-      <div className={styles.potentialBenefitsContainer}>
-        {/* Potential Benefits Text and Logo */}
-        <div className={styles.potentialBenefitsContent}>
-          <div className={styles.potentialBenefitsLogoWrapper}>
-            <div className={styles.potentialBenefitsIconCircle}>
-              <img
-                src="/assets/NewWeb/Assets/BenefitsLogo.svg"
-                alt="Benefits Logo"
-                className={styles.potentialBenefitsIcon}
-              />
+      {/* New Cards and Potential Benefits */}
+      <div className={styles.newCardsAndBenefitsContainer}>
+        {/* New Cards */}
+        <div className={styles.newCardsGrid}>
+          {/* New Card 1 */}
+          <div className={styles.newCard}>
+            <div className={styles.newCardHeader}>
+              <div className={styles.newCardNumber}>1</div>
+              <h3 className={styles.newCardTitle}>Enhanced Engagement</h3>
             </div>
-            <h2 className={styles.potentialBenefitsTitle}>
-              Potential Benefits
-            </h2>
+            <p className={styles.newCardParagraph}>
+              Integrating luck-based gaming into Telegram chats significantly
+              boosts member interaction and participation. The potential for
+              rewards adds excitement, encouraging active involvement.
+            </p>
           </div>
+
+          {/* New Card 2 */}
+          <div className={styles.newCard}>
+            <div className={styles.newCardHeader}>
+              <div className={styles.newCardNumber}>2</div>
+              <h3 className={styles.newCardTitle}>Community Building</h3>
+            </div>
+            <p className={styles.newCardParagraph}>
+              Shared match activities foster camaraderie and collective
+              attachment. Members bond over shared experiences, strengthening
+              the community.
+            </p>
+          </div>
+
+          {/* New Card 3 */}
+          <div className={`${styles.newCard} ${styles.fullWidthCard}`}>
+            <div className={styles.newCardHeader}>
+              <div className={styles.newCardNumber}>3</div>
+              <h3 className={styles.newCardTitle}>Monetization Opportunity</h3>
+            </div>
+            <p className={styles.newCardParagraph}>
+              The bots provide novel income generation avenues for group owners
+              and active participants. Managed match pools and participation
+              fees create potential revenue streams, incentivizing group owners
+              to curate engaging experiences.
+            </p>
+          </div>
+        </div>
+
+        {/* Potential Benefits */}
+        <div className={styles.potentialBenefitsContent}>
+          <div className={styles.potentialBenefitsIconCircle}>
+            <img
+              src="/assets/NewWeb/Assets/BenefitsLogo.svg"
+              alt="Benefits Icon"
+            />
+          </div>
+          <h2 className={styles.potentialBenefitsTitle}>Potential Benefits</h2>
           <p className={styles.potentialBenefitsParagraph}>
             Gamifying Telegram group chats with betting bots offers numerous
             advantages for both users and group owners. Additionally, we offer
-            incentives for group owners and a referral program...
+            incentives for group owners and a referral program. Group owners
+            receive 20% of all profits made within their groups. The referral
+            program rewards users with 20% of profits from groups they help
+            onboard for life, promoting growth, engagement, and passive income
+            for all parties involved.
           </p>
         </div>
       </div>
