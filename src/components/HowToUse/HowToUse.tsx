@@ -36,10 +36,10 @@ const HowToUse: React.FC = () => {
               Adding The Bot Into Your Group
             </h2>
             <p>
-              The bot can be found on telegram by searching “@betloungepvp_bot”
-              or clicking{" "}
+              The bot can be found on telegram by searching “@THE_DGN_BOT” or
+              clicking{" "}
               <a
-                href="https://t.me/betloungepvp_bot"
+                href="https://t.me/THE_DGN_BOT"
                 target="_blank"
                 rel="noopener noreferrer"
               >
