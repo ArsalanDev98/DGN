@@ -1,93 +1,196 @@
 .howItWorksSection {
-    background-image: url("/assets/SVG/Background/HOW IT WORKDS.svg");
-    background-size: cover;
+  padding: 100px 0;
+  width: 100%;
+}
 
-    .howItWorksContainer {
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 100px;
-        max-width: 1920px;
-        margin: 0 auto;
+.howItWorksContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 80px;
+  margin: 0 auto;
+  padding: 3% 0;
+  backdrop-filter: blur(10px); /* Apply blur to the background */
+}
 
-        .header {
-            width: fit-content;
-            margin-bottom: 24px;
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
 
-            h1 {
-                font-family: "Berkshire Swash";
-                font-size: 3rem;
-                margin: 0;
-                letter-spacing: 1px;
+.header h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 700;
+}
 
-            }
+.header p {
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+  line-height: 170%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 24px;
+  padding: 0 20px;
+  max-width: 800px;
+  width: 100%;
+}
 
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-        }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
 
-        .cards {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 100%;
-        }
+.cardContainer {
+  flex: 0 0 calc(33.33% - 40px); /* Three cards per row on larger screens */
+  max-width: 370px;
+  background-image: url("/assets/NewWeb/Assets/HowItWorksCards.png");
+  border-radius: 29px;
+  border: 1px solid #eba900;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  overflow: hidden;
+}
 
-        .cardContainer {
-            position: relative;
-        }
+.cardContainer > * {
+  position: relative;
+  z-index: 2;
+}
 
-        .imgCard {
-            width: 400px;
-            margin: 20px 10px;
-        }
+/* Adjust image size and card padding for mobile */
+.imgCard {
+  width: 65%; /* Set image width to 25% of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: none; /* Remove max height constraint */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
 
-        .title {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: "Berkshire Swash";
-            background: linear-gradient(130deg, #cca757, #daba5c, #cdaa56, #715225, #9d7a40, #cfac5b, #b99850);
-            background-clip: text;
-            color: transparent;
-            font-size: 35px;
-            width: 80%;
-            text-align: center;
-        }
+.title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
 
-        .description {
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, 0);
-            width: 80%;
-            text-align: center;
-            font-size: 18px;
-            font-family: "Poppins", sans-serif;
-            margin-top: 10px;
+.description {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  padding: 0 10px;
+  text-align: left;
+  max-width: 95%;
+}
 
-        }
-    }
+/* Mobile adjustments to reduce card size and image size */
+@media only screen and (max-width: 768px) {
+  .howItWorksSection {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 
-    @media only screen and (max-width: 630px) {
-        .howItWorksContainer {
-            padding: 24px 0;
+  .howItWorksContainer {
+    padding: 0;
+  }
 
-            .imgCard {
-                width: 320px;
-            }
+  .cards {
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 15px;
+    padding: 0;
+    width: 100%;
+  }
 
-            .title {
-                font-size: 28px;
-            }
+  .cardContainer {
+    flex: 1;
+    max-width: 100%; /* Ensure cards take full width */
+    padding: 15px; /* Reduce padding for a tighter layout */
+    margin: 10px 0; /* Less margin between cards */
+  }
 
-            .description {
-                font-size: 14px;
-            }
-        }
-    }
+  .imgCard {
+    width: 25%; /* Maintain 25% width of the container */
+    height: auto; /* Let the height scale automatically */
+    max-height: none; /* No fixed height to ensure scaling */
+  }
+
+  .title {
+    font-size: 1.4rem; /* Slightly smaller font for title */
+  }
+
+  .description {
+    font-size: 0.95rem;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+    max-width: 90%;
+    padding: 0 20px;
+    margin-top: 15px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cards {
+    width: 90%;
+  }
+  .cardContainer {
+    flex: 1;
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  .imgCard {
+    width: 45%; /* Scale image to 25% of the container's width */
+    height: auto; /* Auto height to keep aspect ratio */
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    padding: 0 8px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+    max-width: 95%;
+    padding: 0 10px;
+    margin-top: 15px;
+  }
 }

@@ -1,251 +1,261 @@
 .navbarSection {
-  background-color: #0c0c0c;
+  font-family: "Raleway", sans-serif;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logoTextLink {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.logoText {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: pre-line;
+  background: linear-gradient(
+    130deg,
+    #e3a455 0%,
+    #f6dba6 12.5%,
+    #ffebc3 25%,
+    #f0be79 37.5%,
+    #8f653b 50%,
+    #673d22 62.5%,
+    #ba7f3b 75%,
+    #eebc70 87.5%,
+    #3f1f0f 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logoText span {
+  display: block;
+}
+
+.navCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  display: flex;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  padding: 4px 15px;
+}
+
+.navLink:hover {
+  color: #e8bc4d;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.navButton {
+  background: linear-gradient(180deg, #eba900 -6.86%, #fff 103.43%);
+  color: #0d0d0c;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.navButton:hover {
+  filter: brightness(1.2);
+}
+
+.botButton {
+  background: #0d0d0c;
+  color: #fff;
+  border: 1px solid #eba900;
+}
+
+@media (max-width: 1355px) {
   .navbar {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    color: white;
-    height: 80px;
-    padding: 0 5%;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 1920px;
-    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
   }
 
   .leftContainer {
-    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row; /* Change to row to align logo and text horizontally */
     align-items: center;
-    margin-right: 4rem;
+    justify-content: center;
+    width: 60%; /* Adjust as needed */
   }
 
   .hamburger {
-    display: none;
-    cursor: pointer;
-    color: white;
-    margin-right: 20px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .logoLink {
-    display: flex;
-    align-items: center;
+    margin-right: 8px; /* Add some space between logo and text */
   }
 
   .logo {
-    height: 60px;
-    width: auto;
-    margin-right: 1rem;
+    height: 30px;
   }
 
   .logoTextLink {
-    text-decoration: none;
-    color: inherit;
-    margin-left: 1em;
-    cursor: pointer;
+    margin-left: 0;
   }
 
   .logoText {
-    font-size: 0.75em;
+    font-size: 0.8em;
+    text-align: left; /* Align text to the left */
   }
 
-  .navContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
-  }
-
-  .navLinks {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navItem {
-    display: flex;
-  }
-
-  .navLink {
-    color: white;
-    text-decoration: none;
-    font-size: medium;
-    transition: color 0.3s ease;
-    padding: 4px 15px;
-  }
-
-  .navLink:hover {
-    color: gold !important;
-  }
-
-  .buttonContainer {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .whitepaperButton {
-    width: 140px;
-    height: 42px;
-    background: none;
-  }
-
-  .whitepaperButton:hover .whitepaperImage {
-    filter: brightness(1.2);
-  }
-
-  .whitepaperImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: filter 0.3s ease;
-  }
-
-  .whitepaperText {
-    position: relative;
-    z-index: 1;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    pointer-events: none;
-  }
-
-  .navButton {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 140px;
-    height: 42px;
-    background-color: transparent;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    line-height: 40px;
-    font-weight: bold;
-
-    transition: all 0.3s ease;
-    position: relative;
-  }
-
-  .whitepaperButton {
-    background-image: url("/assets/PNG/HOMEPAGE/Icons/rectangle.png");
-  }
-
-  .botButton {
-    background-image: url("/assets/PNG/HOMEPAGE/Icons/box outline.png");
-  }
-
-  .botButton:hover,
-  .whitepaperButton:hover {
-    filter: brightness(1.2);
-  }
-
-  .buttonLink {
+  .navCenter {
     display: none;
   }
 
-  @media (max-width: 1480px) {
-    .leftContainer {
-      margin-right: 2rem;
-    }
-
-    .navLinks {
-      gap: 0.5rem;
-    }
+  .buttonContainer {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  @media (max-width: 1385px) {
-    .navLinks {
-      gap: 0.25rem;
-    }
+  .navButton {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 
-  @media (max-width: 1355px) {
-    .hamburger {
-      display: block;
-    }
-
-    .navContent {
-      display: none;
-    }
-
-    .navContent.showMenu {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      max-height: none;
-      padding-bottom: 20px;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      background-color: #0c0c0c;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      padding: 0 5%;
-      animation: slideDown 0.3s ease-out forwards;
-    }
-
-    .navContent.showMenu .navLink:hover {
-      color: white;
-      background-color: transparent;
-    }
-
-    .navLinks {
-      flex-direction: column;
-      width: 100%;
-      gap: 1rem;
-      margin-top: 10px;
-    }
-
-    .navItem {
-      margin-bottom: 1rem;
-      width: 100%;
-    }
-
-    .navLink {
-      width: 100%;
-      border-bottom: 1px solid #fff;
-      padding-bottom: 4px;
-    }
-
+  .botButton {
+    display: none;
   }
 
-  @media (max-width: 1024px) {
-    .buttonContainer {
-      margin-left: auto;
-    }
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0c0c0c;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
-  @media (max-width: 950px) {
-    .buttonLink {
-      display: block;
-    }
+  .mobileNavLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    .buttonContainer {
-      display: none;
-    }
+  .mobileNavItem {
+    margin-bottom: 15px;
+  }
+
+  .mobileNavLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 25px;
+  }
+
+  .logoText {
+    font-size: 0.7em;
+  }
+
+  .navButton {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .leftContainer {
+    width: 70%; /* Increase width for smaller screens if needed */
   }
 }
 
 @keyframes slideDown {
   from {
-    max-height: 0;
     opacity: 0;
+    transform: translateY(-10px);
   }
-
   to {
-    max-height: 700px;
     opacity: 1;
+    transform: translateY(0);
   }
 }

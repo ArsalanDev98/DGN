@@ -1,8 +1,7 @@
-import React from 'react';
-import Newsletter from '../components/Newsletter/Newsletter';
-import Community from '../components/Community/Community';
-import Vision from '../components/Vision/Vision';
-
+import React from "react";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Community from "../components/Community/Community";
+import Vision from "../components/VisionNew/Vision";
 
 const VisionPage: React.FC = () => {
   return (

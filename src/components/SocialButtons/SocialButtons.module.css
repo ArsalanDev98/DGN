@@ -1,0 +1,58 @@
+.socialButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialButtons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #eba900;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.socialButtons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socialButtons img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .socialButtons {
+    gap: 15px;
+  }
+
+  .socialButtons a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .socialButtons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialButtons {
+    gap: 10px;
+  }
+
+  .socialButtons a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .socialButtons img {
+    width: 18px;
+    height: 18px;
+  }
+}

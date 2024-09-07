@@ -3,14 +3,16 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   /* Prevent horizontal scrolling */
-  overflow-y: auto;
+  overflow-x: hidden;
   /* Allow vertical scrolling */
-  background-color: #000000;
-  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  background-image: url("/assets/NewWeb/Background/Background1.png");
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
   color: white;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -24,5 +26,19 @@ header {
   z-index: 1000;
   position: sticky;
   display: block;
+}
 
+.commonContainer {
+  margin: 0 auto; /* Center the container */
+  padding: 0 14%;
+}
+
+@media (max-width: 1026px) {
+  .commonContainer {
+    padding: 0 5%; /* Keep it consistent for smaller screens */
+  }
+
+  .howItWorksContainer {
+    padding: 0 5%; /* Adjust padding in the same way for this container */
+  }
 }

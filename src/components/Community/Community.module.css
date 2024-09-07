@@ -1,78 +1,74 @@
 .communitySection {
-  background-image: url('/assets/PNG/HOMEPAGE/Background/JOIN.png');
+  background-image: url("/assets/NewWeb/Background/CommunityBackground.png");
   background-size: cover;
   background-position: center;
+  padding: 100px 0;
+}
 
+.communityContainer {
+  background-image: url("/assets/NewWeb/Assets/CommunityCardLayer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 80px;
+  border: 1px solid #eba900;
+  backdrop-filter: blur(10px);
+  padding: 60px 40px;
+}
+
+.communityContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+}
+
+.communityContent h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.communityContent p {
+  font-size: 1.375rem;
+  color: #bcbcc3;
+  margin-bottom: 30px;
+}
+
+.communitySocialButtons {
+  margin-top: 30px;
+}
+
+.communitySocialButtons a {
+  background-color: #eba900;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
   .communityContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    color: white;
-    max-width: 1920px;
-    margin: 0 auto;
+    padding: 40px 20px;
   }
 
-  .communityContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .textContent {
-    max-width: 60%;
-  }
-
-  h2 {
+  .communityContent h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-family: "Berkshire Swash", cursive;
   }
 
-  .highlightImage {
-    width: 200px;
-    margin-bottom: 20px;
+  .communityContent p {
+    font-size: 1rem;
   }
 
-  p {
-    font-size: 1.2rem;
+  .communitySocialButtons {
+    margin-top: 20px;
   }
 
-  .iconsContent {
-    display: flex;
-    gap: 40px;
-  }
-
-  .icon {
-    width: 78px;
-    height: 78px;
-    transition: transform 0.3s ease;
-  }
-
-  .icon:hover {
-    transform: scale(1.1);
-  }
-
-  @media (max-width: 768px) {
-    .communityContent {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .textContent {
-      max-width: 100%;
-      text-align: center;
-    }
-
-    .iconsContent {
-      margin-top: 20px;
-    }
-
-    .icon {
-      width: 60px;
-      height: 60px;
-    }
+  .communitySocialButtons a {
+    margin: 0 5px;
   }
 }
