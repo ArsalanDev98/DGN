@@ -2,36 +2,74 @@
   background-image: url("/assets/NewWeb/Background/RoadmapMainBackground.png");
   background-size: cover;
   background-position: center;
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
   .roadmapContainer {
-    padding: 30px 20px;
-    color: white;
-    min-height: 100vh;
-    /* Ensure it covers the full viewport height */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1920px;
-    margin: 0 auto;
   }
 
-  .roadmapHeader {
+  .contentWrapper {
     text-align: center;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .subHeader {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #eba900 -6.86%, #fff 103.43%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .header {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-family: "Berkshire Swash", cursive;
-  }
-
-  .highlightImage {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 200px;
+    color: white;
   }
 
   .roadmapImage {
     width: 100%;
     max-width: 1000px;
-    /* Adjust as needed */
     height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmapSection {
+    padding: 60px 0;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .roadmapSection {
+    padding: 40px 0;
+  }
+
+  .header {
+    font-size: 1.5rem;
   }
 }
