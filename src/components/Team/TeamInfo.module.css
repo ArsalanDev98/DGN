@@ -19,7 +19,6 @@
   border-radius: 32px;
   overflow: hidden;
   width: 49%;
-  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #b99850;
   box-sizing: border-box;
