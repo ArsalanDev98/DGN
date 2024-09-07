@@ -43,3 +43,9 @@ h1 {
   display: flex;
   justify-content: center; /* Center the cardsContainer horizontally */
 }
+
+@media (max-width: 480px) {
+  .teamContainer p {
+    text-align: center;
+  }
+}

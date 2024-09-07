@@ -96,7 +96,7 @@ p {
 .arrowButton {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   color: #e8bc4d;
 }
@@ -114,5 +114,22 @@ p {
 
   .textContent {
     height: 100%;
+  }
+
+  .textContent p {
+    font-size: 10px;
+  }
+
+  .carouselControls {
+    margin-top: 5px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .textContent p {
+    font-size: 0.5rem;
   }
 }
