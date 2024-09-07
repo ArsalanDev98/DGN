@@ -1,13 +1,16 @@
-/* BetLounge Section */
 .betLounge_section {
   width: 100%;
-  padding: 100px 0;
-  min-height: 100vh; /* Ensure full viewport height */
+  padding: 12% 0 0 0;
+  min-height: 100vh;
   display: flex;
-  align-items: flex-start; /* Aligns content with the navbar logo */
-  justify-content: flex-start; /* Aligns content to the left */
-  position: relative; /* Needed for positioning the roulette image */
-  overflow: hidden; /* Hide any overflow from the image */
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/assets/NewWeb/Background/Background1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Main container */
@@ -138,7 +141,8 @@
   }
 
   .betLounge_section {
-    padding: 50px 0; /* Reduced padding for mobile */
+    padding: 12% 0 0 0;
+
     min-height: auto; /* Remove forced 100vh to allow scaling */
   }
 
@@ -174,7 +178,7 @@
   }
 
   .betLounge_section {
-    padding: 30px 0; /* Reduce the padding for small screens */
+    padding: 12% 0 0 0;
   }
 
   .rouletteImage {
@@ -213,7 +217,7 @@
   }
 
   .betLounge_section {
-    padding: 20px 0; /* Further reduce padding for very small screens */
+    padding: 16% 0 0 0;
     min-height: auto; /* Allow it to adjust to the content size */
   }
 

@@ -11,7 +11,12 @@
   border-radius: 80px;
   margin: 0 auto;
   padding: 3% 0;
-  backdrop-filter: blur(10px); /* Apply blur to the background */
+  background-image: url("/assets/NewWeb/Assets/HowItWorksBackground.png"); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  background-color: transparent; /* Make sure the background color is transparent */
+  backdrop-filter: blur(10px); /* Optional: Apply a blur to the background */
 }
 
 .header {
@@ -53,7 +58,8 @@
 .cardContainer {
   flex: 0 0 calc(33.33% - 40px); /* Three cards per row on larger screens */
   max-width: 370px;
-  background-image: url("/assets/NewWeb/Assets/HowItWorksCards.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("/assets/NewWeb/Assets/HowItWorksCards.png");
   border-radius: 29px;
   border: 1px solid #eba900;
   padding: 20px;

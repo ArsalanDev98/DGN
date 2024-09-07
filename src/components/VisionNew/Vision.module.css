@@ -2,7 +2,7 @@
   background: url("/assets/NewWeb/Background/VisionBackground.png");
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 12% 0 100px 0;
 }
 
 .visionSection p {
@@ -427,6 +427,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .visionSection {
+    padding: 20% 0 100px 0;
+  }
+
   .visionContentWrapper h1 {
     font-size: 1.6rem;
   }
