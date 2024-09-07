@@ -1,12 +1,11 @@
 .navbarSection {
   font-family: "Raleway", sans-serif;
-  z-index: 1000;
-  margin-bottom: 50px;
-  position: absolute; /* Change to absolute positioning */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background: transparent; /* Make the background transparent */
+  z-index: 1000;
+  background: transparent;
 }
 
 .navbar {
@@ -16,8 +15,15 @@
   color: white;
   height: 80px;
   width: 100%;
+}
+
+.navbarBackdrop {
+  position: absolute;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  right: 0;
+  height: 80px;
+  pointer-events: none;
 }
 
 .leftContainer {
@@ -28,7 +34,7 @@
 .hamburger {
   display: none;
   cursor: pointer;
-  color: white;
+  color: #eba900;
   margin-right: 20px;
 }
 
@@ -143,11 +149,53 @@
   border: 1px solid #eba900;
 }
 
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.mobileNavLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileNavItem {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eba900;
+}
+
+.mobileNavItem:last-child {
+  border-bottom: none;
+}
+
+.mobileNavLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.mobileNavLink:hover {
+  color: #eba900;
+}
+
 @media (max-width: 1355px) {
   .navbar {
-    justify-content: space-between;
     padding: 0 20px;
-    height: 60px;
   }
 
   .leftContainer {
@@ -155,10 +203,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    flex-direction: row; /* Change to row to align logo and text horizontally */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 60%; /* Adjust as needed */
+    width: 60%;
   }
 
   .hamburger {
@@ -170,7 +218,7 @@
   }
 
   .logoLink {
-    margin-right: 8px; /* Add some space between logo and text */
+    margin-right: 8px;
   }
 
   .logo {
@@ -183,7 +231,7 @@
 
   .logoText {
     font-size: 0.8em;
-    text-align: left; /* Align text to the left */
+    text-align: left;
   }
 
   .navCenter {
@@ -208,41 +256,20 @@
 
   .mobileMenu {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #0c0c0c;
-    padding: 20px;
-    z-index: 2;
-  }
-
-  .mobileNavLinks {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .mobileNavItem {
-    margin-bottom: 15px;
-  }
-
-  .mobileNavLink {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
   .logo {
-    height: 25px;
+    height: 40px;
   }
 
   .logoText {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   .navButton {
@@ -251,7 +278,30 @@
   }
 
   .leftContainer {
-    width: 70%; /* Increase width for smaller screens if needed */
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .leftContainer {
+    width: 80%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .logoText {
+    font-size: 1em;
+  }
+
+  .navButton {
+    padding: 6px 10px;
+    font-size: 11px;
   }
 }
 
