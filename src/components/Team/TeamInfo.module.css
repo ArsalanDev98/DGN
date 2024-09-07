@@ -90,6 +90,7 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .arrowButton {
@@ -105,9 +106,13 @@ p {
 }
 
 /* Media query to show only 1 card at a time on mobile */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .card {
-    width: 342px; /* Make each card take the full width */
+    width: 100%; /* Make each card take the full width */
     height: 284px;
+  }
+
+  .textContent {
+    height: 100%;
   }
 }

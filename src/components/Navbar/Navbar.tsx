@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import logo from "/assets/NewWeb/Logo/DGN-navbar-logo.svg";
+import logo from "/assets/NewWeb/Logo/DGN-Navbar.svg";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);

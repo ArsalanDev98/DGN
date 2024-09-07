@@ -5,6 +5,7 @@ import chuniGif from "/assets/PNG/INCENTIVE/Gifs/chuni.gif";
 import nicoImage from "/assets/PNG/INCENTIVE/Images/nicomachiaveli.png";
 import elevatedGif from "/assets/PNG/HOMEPAGE/Gifs/elevated.gif";
 import tomImage from "/assets/PNG/HOMEPAGE/Images/code.png";
+import nicoImage2 from "/assets/NewWeb/Assets/nico3.jpg";
 
 const teamMembers = [
   {

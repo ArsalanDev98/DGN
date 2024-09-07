@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BetLounge.module.css";
-import { Link } from "react-router-dom";
 import Partners from "../Partners/Partners";
+import SocialButtons from "../SocialButtons/SocialButtons";
 import RouletteImage from "/assets/NewWeb/Assets/Roulette2.png";
 
 const BetLounge: React.FC = () => {
@@ -18,9 +18,7 @@ const BetLounge: React.FC = () => {
             <br />
             Gamifying The Social Landscape Of Telegram
           </p>
-          <Link to="https://t.me/BetLoungePvP" className={styles.joinButton}>
-            Join
-          </Link>
+          <SocialButtons className={styles.betLoungeSocialButtons} />
           <div className={styles.partnersWrapper}>
             <Partners />
           </div>

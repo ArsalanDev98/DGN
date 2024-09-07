@@ -114,6 +114,11 @@
   opacity: 0.9;
 }
 
+.betLoungeSocialButtons {
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+
 /* Responsive adjustments for different screen sizes */
 @media only screen and (max-width: 1026px) {
   .container {

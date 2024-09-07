@@ -8,7 +8,7 @@ const Vision: React.FC = () => {
       <div className="commonContainer">
         <div className={styles.visionContentWrapper}>
           <h1 className={styles.visionTitle}>
-            Decentralize Gaming <br /> Network{" "}
+            Decentralized Gaming <br /> Network{" "}
             <span className={styles.highlight}>Vision</span>
           </h1>
           <p className={styles.visionParagraph}>
@@ -164,13 +164,13 @@ const Vision: React.FC = () => {
             </div>
           </div>
 
-          {/* Potential Benefits */}
           <div className={styles.potentialBenefitsContent}>
             <div className={styles.potentialBenefitsHeader}>
               <div className={styles.potentialBenefitsIconCircle}>
                 <img
                   src="/assets/NewWeb/Assets/BenefitsLogo.svg"
                   alt="Benefits Icon"
+                  className={styles.potentialBenefitsIcon}
                 />
               </div>
               <h2 className={styles.potentialBenefitsTitle}>

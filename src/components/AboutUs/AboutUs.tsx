@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
       <div className="commonContainer">
         <div className={styles.aboutUsContainer}>
           <div className={styles.leftColumn}>
-            <img src="/assets/NewWeb/Assets/AboutUsTable.svg" alt="About Us" />
+            <img src="/assets/NewWeb/Assets/AboutUsTable.png" alt="About Us" />
           </div>
           <div className={styles.rightColumn}>
             <h1>About Decentralized Gaming Network</h1>
