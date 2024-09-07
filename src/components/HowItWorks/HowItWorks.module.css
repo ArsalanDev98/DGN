@@ -166,9 +166,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .howItWorksSection {
+    padding-bottom: 5%;
+  }
+
+  .howItWorksContainer {
+    padding-bottom: 5%;
+  }
+
   .cards {
     width: 90%;
   }
+
   .cardContainer {
     flex: 1;
     padding: 12px;
@@ -187,6 +196,10 @@
   .description {
     font-size: 0.85rem;
     padding: 0 8px;
+  }
+
+  .header {
+    margin-top: 5%;
   }
 
   .header h1 {
