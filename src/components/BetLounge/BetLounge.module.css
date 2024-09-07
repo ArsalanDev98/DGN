@@ -149,6 +149,7 @@
   /* Move partners section up */
   .partnersWrapper {
     margin-top: 3rem; /* Move it closer to the main content */
+    margin-bottom: 1rem;
   }
 
   .rouletteImage {
