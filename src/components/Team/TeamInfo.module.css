@@ -103,19 +103,35 @@ p {
   transform: scale(1.1);
 }
 
-/* Media query to show only 1 card at a time on mobile */
-@media (max-width: 480px) {
+/* Media query to switch to a single card layout when screen width is smaller */
+@media (max-width: 1350px) {
   .card {
-    width: 100%; /* Make each card take the full width */
-    height: 284px;
+    flex-direction: column; /* Stack image and content vertically */
+    width: 100%; /* Full width for single card */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .cardImage {
+    width: 100%; /* Image takes full width on small screens */
+    height: 300px; /* Set a height for the image */
+    object-fit: cover; /* Maintain image aspect ratio */
+    border-radius: 10px 10px 0 0;
+  }
+
+  .cardContent {
+    padding: 10px; /* Adjust padding */
   }
 
   .textContent {
-    height: 100%;
+    height: auto;
   }
 
-  .textContent p {
-    font-size: 10px;
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 
   .carouselControls {
@@ -127,7 +143,33 @@ p {
     height: 30px;
   }
 
+  .iconsContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query to show only 1 card at a time on mobile */
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Make each card take the full width */
+    height: auto; /* Remove fixed height */
+  }
+
+  .textContent {
+    height: 100%;
+  }
+
   .textContent p {
-    font-size: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .carouselControls {
+    margin-top: 5px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
   }
 }
