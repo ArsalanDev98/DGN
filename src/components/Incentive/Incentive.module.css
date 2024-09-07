@@ -1,140 +1,98 @@
 .incentiveSection {
-  background-image: url("/assets/NewWeb/Assets/Background/IncentiveBackground.png");
+  background: url("/assets/NewWeb/Background/IncentiveBackground.png");
   background-size: cover;
-  background-position: center;
-  padding: 60px 0;
+  padding: 12% 0 2% 0;
+  position: relative;
+  z-index: 1; /* This brings the section above the body background */
+}
+.incentiveContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2; /* This ensures the content is above the section background */
+}
+
+.incentiveContainer h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.subTitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.introText {
+  color: #bcbcc3;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 37.4px */
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.incentiveImageContainer {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.incentiveImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .incentiveSection {
+    padding: 20% 0 5% 0;
+  }
 
   .incentiveContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    color: white;
-    box-sizing: border-box;
-    max-width: 1440px;
-    margin: 0 auto;
-    border-radius: 80px; /* Rounded corners */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Frame border */
-    backdrop-filter: blur(10px); /* Background blur */
+    padding: 20px;
+  }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      font-family: "Berkshire Swash", cursive;
-      margin-top: 0;
-    }
+  .incentiveContainer h1 {
+    font-size: 36px;
+    line-height: 120%;
+  }
 
-    .highlightImage {
-      width: 200px;
-      margin-bottom: 20px;
-    }
+  .subTitle {
+    font-size: 24px;
+  }
 
-    .textContainer {
-      max-width: 1200px;
-      margin-bottom: 40px;
-    }
+  .introText {
+    font-size: 18px;
+    line-height: 160%;
+  }
 
-    .introText {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-      color: #bcbcc3;
-      text-align: center;
-    }
-
-    .cardsContainer {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 1200px;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background-image: url("/assets/PNG/HOMEPAGE/Images/team sec.png");
-      background-size: cover;
-      border-radius: 10px;
-      overflow: hidden;
-      width: 290px;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 2px solid #b99850;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .cardImage {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 20px auto 10px;
-      display: block;
-    }
-
-    .cardContent {
-      padding: 20px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 100%;
-    }
-
-    .textContent {
-      flex-grow: 1;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 5px;
-    }
-
-    .title {
-      background-clip: text;
-      color: transparent;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    .iconsContainer {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: auto;
-    }
-
-    .icon {
-      width: 50px;
-      height: 50px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .icon:hover {
-      transform: scale(1.2);
-    }
-
-    @media (max-width: 768px) {
-      .cardsContainer {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .incentiveContainer {
-        min-height: auto;
-      }
-    }
+  .incentiveImageContainer {
+    max-width: 100%;
   }
 }

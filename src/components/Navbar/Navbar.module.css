@@ -1,5 +1,12 @@
 .navbarSection {
   font-family: "Raleway", sans-serif;
+  z-index: 1000;
+  margin-bottom: 50px;
+  position: absolute; /* Change to absolute positioning */
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent; /* Make the background transparent */
 }
 
 .navbar {
@@ -9,7 +16,6 @@
   color: white;
   height: 80px;
   width: 100%;
-  position: relative;
   top: 0;
   z-index: 1000;
 }
