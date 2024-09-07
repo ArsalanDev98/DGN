@@ -63,15 +63,15 @@
   white-space: pre-line;
   background: linear-gradient(
     130deg,
-    #e3a455 0%,
-    #f6dba6 12.5%,
-    #ffebc3 25%,
-    #f0be79 37.5%,
-    #8f653b 50%,
-    #673d22 62.5%,
-    #ba7f3b 75%,
-    #eebc70 87.5%,
-    #3f1f0f 100%
+    #e6b86b 0%,
+    /* Brighter gold */ #f6dba6 12.5%,
+    #ffebcd 25%,
+    /* Light gold */ #f0c589 100%,
+    /* Softer gold */ #b67a4a 50%,
+    /* Lighter brown-gold */ #805029 40.5%,
+    /* Lighter brown */ #c69350 75%,
+    /* Medium brown-gold */ #f0c58a 50.5%,
+    /* Soft gold */ #5a3521 50% /* Darker but still slightly lightened brown */
   );
   background-clip: text;
   -webkit-background-clip: text;
