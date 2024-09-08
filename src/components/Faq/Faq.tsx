@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Faq.module.css";
-import FaqRoulette from "/assets/NewWeb/Assets/FaqRoulette.svg"; // Make sure the path is correct
+import FaqRoulette from "/assets/NewWeb/Assets/FAQTable.png"; // Make sure the path is correct
 
 const faqData = [
   {
