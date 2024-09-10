@@ -5,8 +5,7 @@ import FaqRoulette from "/assets/NewWeb/Assets/FAQTable.png"; // Make sure the p
 const faqData = [
   {
     question: "Where Can I Find The Bot?",
-    answer:
-      "The bot can be found on telegram, you can search @THE_DGN_BOT or click here: https://t.me/THE_DGN_BOT",
+    answer: "The bot can be found on telegram with the username @THE_DGN_BOT",
   },
   {
     question: "Does The Bot Need To Be Admin To Work?",
