@@ -84,16 +84,14 @@ const Navbar: React.FC = () => {
 
         <div className={styles.buttonContainer}>
           <Link
-            to="https://organization-ows.gitbook.io/usdbetz-documents"
-            target="_blank"
-            rel="noopener noreferrer"
+            to="#"
+            onClick={(e) => e.preventDefault()} // Prevent the link from doing anything
             className={styles.navButton}
-            onClick={closeMenu}
           >
             Whitepaper
           </Link>
           <Link
-            to="/bot"
+            to="https://t.me/THE_DGN_BOT"
             className={`${styles.navButton} ${styles.botButton}`}
             onClick={closeMenu}
           >
