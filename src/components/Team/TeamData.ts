@@ -24,9 +24,9 @@ const teamMembers = [
     image: nicoImage,
     icons: [xIcon, telegramIcon, linkedinIcon],
     urls: [
-      "https://x.com/0xnicott",
-      "https://t.me/OxMachiavelli",
-      "https://www.linkedin.com/in/nico-machiavelli",
+      "https://x.com/MachiWhale",
+      "https://t.me/CryptoMachi",
+      "https://www.linkedin.com/in/nico-machiavelli-950156226",
     ],
   },
   {

@@ -8,22 +8,18 @@ interface SocialButtonsProps {
 const SocialButtons: React.FC<SocialButtonsProps> = ({ className }) => {
   return (
     <div className={`${styles.socialButtons} ${className || ""}`}>
+      {/* Disable the Telegram button by preventing default behavior */}
       <a
-        href="https://t.me/BetLoungePvP"
-        target="_blank"
+        href="#"
+        onClick={(e) => e.preventDefault()} // Prevents default action
         rel="noopener noreferrer"
       >
         <img src="/assets/NewWeb/Assets/telegram.svg" alt="Telegram" />
       </a>
+
+      {/* This button remains active and functional */}
       <a
-        href="https://www.linkedin.com/company/YourCompany"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/assets/NewWeb/Assets/linkedin.svg" alt="LinkedIn" />
-      </a>
-      <a
-        href="https://twitter.com/YourTwitterHandle"
+        href="https://x.com/DecentraBetERC"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "Where Can I Find The Bot?",
     answer:
-      "The bot can be found on telegram, you can search @betloungepvp_bot or click here: https://t.me/betloungepvp_bot",
+      "The bot can be found on telegram, you can search @THE_DGN_BOT or click here: https://t.me/THE_DGN_BOT",
   },
   {
     question: "Does The Bot Need To Be Admin To Work?",
