@@ -208,7 +208,6 @@
   .rouletteImage {
     width: 50vw; /* Reduce size on small screens */
     right: -20px;
-    bottom: 10px; /* Adjust positioning for mobile */
     z-index: 1; /* Behind content */
   }
 
