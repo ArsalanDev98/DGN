@@ -19,8 +19,8 @@ const SocialButtons: React.FC<SocialButtonsProps> = ({ className }) => {
 
       {/* This button remains active and functional */}
       <a
-        href="https://x.com/DecentraBetERC"
-        target="_blank"
+        href="#"
+        onClick={(e) => e.preventDefault()} // Prevents default action
         rel="noopener noreferrer"
       >
         <img src="/assets/NewWeb/Assets/x.svg" alt="X (Twitter)" />
