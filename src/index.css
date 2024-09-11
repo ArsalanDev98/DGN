@@ -11,6 +11,7 @@ body {
   scroll-behavior: smooth;
   position: relative;
   z-index: 0;
+  background-color: #000; /* Add this line to set a persistent background color */
 }
 
 *,
