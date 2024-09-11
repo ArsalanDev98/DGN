@@ -7,24 +7,24 @@
 
 .faqContainer {
   display: flex;
-  justify-content: space-between; /* Two-column layout */
+  justify-content: space-between;
   align-items: flex-start;
   padding: 50px 100px;
   max-width: 100%;
   margin: 0 auto;
   border-radius: 80px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px); /* Apply blur to the background */
-  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .leftContent {
-  flex: 1; /* Left side column */
+  flex: 1;
   padding-right: 20px;
 }
 
 .rightContent {
-  flex: 1; /* Right side column for FAQ questions */
+  flex: 1;
 }
 
 .faqHeader {
@@ -50,7 +50,7 @@
 }
 
 .faqRouletteImage {
-  width: 80%; /* Adjust the size of the roulette image */
+  width: 80%;
   max-width: 400px;
 }
 
@@ -66,7 +66,6 @@
   margin-bottom: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative;
 }
 
 .faqItem.open {
@@ -81,6 +80,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: color 0.3s ease;
 }
 
 .faqItem h3::after {
@@ -92,22 +92,20 @@
 
 .faqItem.open h3::after {
   content: "-";
+  transform: rotate(180deg);
+}
+
+.answerWrapper {
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
 
 .faqItem p {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
   font-size: 1rem;
   line-height: 1.5;
-  margin-top: 15px;
   color: #bcbcc3;
-  transition: opacity 0.3s ease, height 0.3s ease;
-}
-
-.faqItem.open p {
-  opacity: 1;
-  height: auto;
+  margin: 0;
+  padding-top: 15px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -131,7 +129,7 @@
   }
 
   .faqRouletteImage {
-    width: 100%; /* Full-width on mobile */
+    width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }

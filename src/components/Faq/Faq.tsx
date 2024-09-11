@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Faq.module.css";
 import FaqRoulette from "/assets/NewWeb/Assets/FAQTable.png"; // Make sure the path is correct
 
@@ -31,9 +31,14 @@ const faqData = [
 
 const Faq: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const answerRefs = useRef<(HTMLParagraphElement | null)[]>([]);
+
+  useEffect(() => {
+    answerRefs.current = answerRefs.current.slice(0, faqData.length);
+  }, [faqData]);
 
   const toggleFaq = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -46,7 +51,6 @@ const Faq: React.FC = () => {
               Find answers to common questions about Decentralized Gaming
               Network (DGN) and how it works in our FAQ section.
             </p>
-            {/* Add the roulette SVG below the paragraph */}
             <img
               src={FaqRoulette}
               alt="Faq Roulette"
@@ -65,7 +69,19 @@ const Faq: React.FC = () => {
                   onClick={() => toggleFaq(index)}
                 >
                   <h3>{faq.question}</h3>
-                  <p>{faq.answer}</p>
+                  <div
+                    className={styles.answerWrapper}
+                    style={{
+                      height:
+                        openIndex === index
+                          ? answerRefs.current[index]?.scrollHeight + "px"
+                          : "0px",
+                    }}
+                  >
+                    <p ref={(el) => (answerRefs.current[index] = el)}>
+                      {faq.answer}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
