@@ -8,7 +8,6 @@ interface SocialButtonsProps {
 const SocialButtons: React.FC<SocialButtonsProps> = ({ className }) => {
   return (
     <div className={`${styles.socialButtons} ${className || ""}`}>
-      {/* Disable the Telegram button by preventing default behavior */}
       <a
         href="#"
         onClick={(e) => e.preventDefault()} // Prevents default action
@@ -17,7 +16,6 @@ const SocialButtons: React.FC<SocialButtonsProps> = ({ className }) => {
         <img src="/assets/NewWeb/Assets/telegram.svg" alt="Telegram" />
       </a>
 
-      {/* This button remains active and functional */}
       <a
         href="#"
         onClick={(e) => e.preventDefault()} // Prevents default action
