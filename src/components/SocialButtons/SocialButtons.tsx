@@ -16,11 +16,7 @@ const SocialButtons: React.FC<SocialButtonsProps> = ({ className }) => {
         <img src="/assets/NewWeb/Assets/telegram.svg" alt="Telegram" />
       </a>
 
-      <a
-        href="#"
-        onClick={(e) => e.preventDefault()} // Prevents default action
-        rel="noopener noreferrer"
-      >
+      <a href="https://x.com/DGNPlaynow" rel="noopener noreferrer">
         <img src="/assets/NewWeb/Assets/x.svg" alt="X (Twitter)" />
       </a>
     </div>
