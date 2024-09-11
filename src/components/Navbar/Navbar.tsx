@@ -84,8 +84,7 @@ const Navbar: React.FC = () => {
 
         <div className={styles.buttonContainer}>
           <Link
-            to="#"
-            onClick={(e) => e.preventDefault()} // Prevent the link from doing anything
+            to="https://dgn-2.gitbook.io/usddgn-documents"
             className={styles.navButton}
           >
             Whitepaper
