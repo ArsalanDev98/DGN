@@ -36,8 +36,9 @@
   column-count: 2;
   column-gap: 30px;
   width: 100%;
-  max-width: 1200px; /* Adjust based on your design preference */
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: center; /* Center the content */
 }
 
 /* Each step card */
@@ -87,7 +88,8 @@
 .stepImage {
   width: 100%;
   max-width: 500px;
-  margin: 10px 0;
+  margin: 10px auto; /* Center the images */
+  display: block; /* Ensure images are centered */
 }
 
 .step p {
