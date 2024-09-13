@@ -30,7 +30,7 @@ const teamMembers = [
     ],
   },
   {
-    name: "Malz, Arsalan, Tom Bateman",
+    name: "",
     title: "Development Team",
     description:
       "20 years experience in full stack development. Multiple solidity and commercial deployments.",
@@ -43,7 +43,7 @@ const teamMembers = [
     ],
   },
   {
-    name: "Sonic, Elevated and TraderB",
+    name: "",
     title: "Marketing Team",
     description:
       "Over 15 years combined experience in crypto. Veteran advisors and builders for large utility projects.",
