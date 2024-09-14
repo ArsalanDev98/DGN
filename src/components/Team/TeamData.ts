@@ -46,7 +46,7 @@ const teamMembers = [
     name: "",
     title: "Marketing Team",
     description:
-      "5 Veteran advisors/Marketing managers, Over 15 years combined experience in crypto. Veteran advisors and builders for large utility projects.",
+      "5 veteran advisors/marketing managers, Over 15 years combined experience in crypto. Veteran advisors and builders for large utility projects.",
     image: elevatedGif,
     icons: [xIcon, telegramIcon],
     urls: ["https://twitter.com/thecryptoidol", "https://t.me/thecryptoidol"],
