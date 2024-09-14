@@ -33,7 +33,7 @@ const teamMembers = [
     name: "",
     title: "Development Team",
     description:
-      "20 years experience in full stack development. Multiple solidity and commercial deployments.",
+      "5 full stack developers with over 40 years combined experience. Multiple solidity and commercial deployments.",
     image: tomImage,
     icons: [xIcon, telegramIcon, linkedinIcon],
     urls: [
@@ -46,7 +46,7 @@ const teamMembers = [
     name: "",
     title: "Marketing Team",
     description:
-      "Over 15 years combined experience in crypto. Veteran advisors and builders for large utility projects.",
+      "5 Veteran advisors/Marketing managers, Over 15 years combined experience in crypto. Veteran advisors and builders for large utility projects.",
     image: elevatedGif,
     icons: [xIcon, telegramIcon],
     urls: ["https://twitter.com/thecryptoidol", "https://t.me/thecryptoidol"],
