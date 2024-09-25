@@ -94,13 +94,30 @@ p {
 .arrowButton {
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: #e8bc4d;
+  padding: 0 10px;
 }
 
 .arrowButton:hover {
   transform: scale(1.1);
+}
+
+.pageIndicator {
+  width: 100px;
+  height: 4px;
+  background-color: rgba(232, 188, 77, 0.3);
+  border-radius: 2px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.pageIndicatorInner {
+  height: 100%;
+  background-color: #e8bc4d;
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
 }
 
 /* Media query to switch to a single card layout when screen width is smaller */
@@ -149,11 +166,10 @@ p {
   }
 }
 
-/* Media query to show only 1 card at a time on mobile */
 @media (max-width: 480px) {
   .card {
-    width: 100%; /* Make each card take the full width */
-    height: auto; /* Remove fixed height */
+    width: 100%;
+    height: auto;
   }
 
   .textContent {
@@ -171,5 +187,9 @@ p {
   .icon {
     width: 30px;
     height: 30px;
+  }
+
+  .pageIndicator {
+    width: 60px;
   }
 }

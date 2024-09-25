@@ -83,9 +83,18 @@ const TeamInfo: React.FC = () => {
         <button onClick={prevPage} className={styles.arrowButton}>
           ←
         </button>
-        <span>{`${currentPage + 1}/${Math.ceil(
-          teamMembers.length / itemsPerPage
-        )}`}</span>
+        <div className={styles.pageIndicator}>
+          <div
+            className={styles.pageIndicatorInner}
+            style={{
+              width: `${
+                ((currentPage + 1) /
+                  Math.ceil(teamMembers.length / itemsPerPage)) *
+                100
+              }%`,
+            }}
+          ></div>
+        </div>
         <button onClick={nextPage} className={styles.arrowButton}>
           →
         </button>
