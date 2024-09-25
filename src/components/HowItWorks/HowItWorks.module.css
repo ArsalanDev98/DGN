@@ -79,14 +79,14 @@
   z-index: 2;
 }
 
-/* Adjust image size and card padding for mobile */
 .imgCard {
-  width: 65%; /* Set image width to 25% of the container */
-  height: auto; /* Maintain aspect ratio */
-  max-height: none; /* Remove max height constraint */
+  width: 65%;
+  height: auto;
+  max-height: 150px; /* Set a fixed maximum height for images */
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 8px;
+  object-fit: contain; /* Ensure the image fits within the container without distorting */
 }
 
 .title {
@@ -95,7 +95,8 @@
   margin-bottom: 12px;
   color: #fff;
   font-weight: 700;
-  text-align: left;
+  text-align: center; /* Changed from left to center for uniformity */
+  min-height: 60px; /* Ensure all titles have a fixed height */
 }
 
 .description {
@@ -108,6 +109,7 @@
   padding: 0 10px;
   text-align: left;
   max-width: 95%;
+  min-height: 120px; /* Ensure a minimum height for the description */
 }
 
 /* Mobile adjustments to reduce card size and image size */
