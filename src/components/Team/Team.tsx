@@ -7,7 +7,7 @@ const Team: React.FC = () => {
     <section className={styles.teamSection}>
       <div className="commonContainer">
         <div className={styles.teamContainer}>
-          <h1>Meet our beautiful team</h1> {/* Updated heading */}
+          <h1>Meet the team</h1> {/* Updated heading */}
           <p className={styles.teamParagraph}>
             Our philosophy is simple; hire great people and give them the
             resources and support to do their best work.
