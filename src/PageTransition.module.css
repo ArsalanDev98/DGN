@@ -1,0 +1,12 @@
+.pageTransition {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.pageTransition.entered {
+  opacity: 1;
+}
+
+.pageTransition.exiting {
+  opacity: 0;
+}
