@@ -9,7 +9,6 @@ import Layout from "./Layout";
 
 import HomePage from "./pages/HomePage";
 import VisionPage from "./pages/VisionPage";
-import BlogPage from "./pages/BlogPage";
 import IncentivePage from "./pages/IncentivePage";
 import RoadmapPage from "./pages/RoadmapPage";
 import HowPage from "./pages/HowPage";
@@ -48,7 +47,6 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="vision" element={<VisionPage />} />
-          <Route path="blog" element={<BlogPage />} />
           <Route path="incentive" element={<IncentivePage />} />
           <Route path="roadmap" element={<RoadmapPage />} />
           <Route path="how-to-use" element={<HowPage />} />
