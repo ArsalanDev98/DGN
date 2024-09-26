@@ -53,6 +53,14 @@
     height: auto;
     margin-left: 7%;
   }
+
+  .hiddenText {
+    position: absolute;
+    left: -9999px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {

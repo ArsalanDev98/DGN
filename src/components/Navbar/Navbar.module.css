@@ -305,6 +305,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 0.75em;
+  }
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
