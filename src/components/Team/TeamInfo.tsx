@@ -5,6 +5,7 @@ import teamMembers from "./TeamData"; // Import teamMembers data
 const TeamInfo: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(2); // Default to showing 2 cards
+  const [slideDirection, setSlideDirection] = useState<string | null>(null);
 
   // Function to detect screen size and adjust itemsPerPage
   const updateItemsPerPage = () => {
@@ -27,6 +28,7 @@ const TeamInfo: React.FC = () => {
   }, []);
 
   const nextPage = () => {
+    setSlideDirection("slideLeft");
     setCurrentPage(
       (prevPage) =>
         (prevPage + 1) % Math.ceil(teamMembers.length / itemsPerPage)
@@ -34,12 +36,18 @@ const TeamInfo: React.FC = () => {
   };
 
   const prevPage = () => {
+    setSlideDirection("slideRight");
     setCurrentPage((prevPage) =>
       prevPage === 0
         ? Math.ceil(teamMembers.length / itemsPerPage) - 1
         : prevPage - 1
     );
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => setSlideDirection(null), 500);
+    return () => clearTimeout(timer);
+  }, [currentPage]);
 
   // Slice the array to show only the number of items based on itemsPerPage
   const visibleMembers = teamMembers.slice(
@@ -49,7 +57,11 @@ const TeamInfo: React.FC = () => {
 
   return (
     <div className={styles.carouselContainer}>
-      <div className={styles.cardsContainer}>
+      <div
+        className={`${styles.cardsContainer} ${
+          slideDirection ? styles[slideDirection] : ""
+        }`}
+      >
         {visibleMembers.map((member, index) => (
           <div className={styles.card} key={index}>
             <img
