@@ -19,34 +19,39 @@
 }
 
 .leftContent {
-  flex: 0 0 30%; /* Reduce width of left content */
-  padding-right: 40px;
+  flex: 1;
+  padding-right: 20px;
 }
 
 .rightContent {
-  flex: 0 0 65%; /* Increase width of FAQ questions area */
+  flex: 1;
 }
 
 .faqHeader {
   text-align: left;
-  font-size: 2.5rem; /* Slightly reduce font size */
+  font-size: 3rem;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
+.highlightImage {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
 .paragraph {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem; /* Reduce font size */
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 170%;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
 
 .faqRouletteImage {
-  width: 100%;
-  max-width: 300px; /* Adjust as needed */
+  width: 80%;
+  max-width: 400px;
 }
 
 .faqList {
@@ -68,15 +73,16 @@
 }
 
 .faqItem h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 40px;
-  position: relative;
+  transition: color 0.3s ease;
+  padding-right: 40px; /* Add padding to prevent text from overlapping icon */
+  position: relative; /* For absolute positioning of the icon */
 }
 
 .faqItem h3::after {
@@ -84,14 +90,14 @@
   width: 30px;
   height: 30px;
   background-image: url("/assets/NewWeb/Assets/FAQSquareGray.svg");
-  background-size: 30px 30px;
+  background-size: 30px 30px; /* Ensure consistent size */
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform 0.3s ease, background-image 0.3s ease;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: transform 0.3s ease, background-image 0.3s ease;
 }
 
 .faqItem.open h3::after {
@@ -112,46 +118,29 @@
   padding-top: 15px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .faqContainer {
     flex-direction: column;
-    padding: 30px;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .leftContent h1 {
+    margin-top: 2%;
+    text-align: center;
   }
 
   .leftContent,
   .rightContent {
-    flex: 1 0 100%;
+    width: 100%;
     padding: 0;
-  }
-
-  .leftContent {
-    margin-bottom: 30px;
-  }
-
-  .faqHeader {
-    text-align: center;
-  }
-
-  .paragraph {
+    align-items: center;
     text-align: center;
   }
 
   .faqRouletteImage {
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .faqContainer {
-    padding: 20px;
-  }
-
-  .faqHeader {
-    font-size: 2rem;
-  }
-
-  .faqItem h3 {
-    font-size: 1.1rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
