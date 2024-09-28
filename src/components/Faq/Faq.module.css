@@ -81,18 +81,28 @@
   justify-content: space-between;
   align-items: center;
   transition: color 0.3s ease;
+  padding-right: 40px; /* Add padding to prevent text from overlapping icon */
+  position: relative; /* For absolute positioning of the icon */
 }
 
 .faqItem h3::after {
-  content: "+";
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: transform 0.3s ease;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/NewWeb/Assets/FAQSquareGray.svg");
+  background-size: 30px 30px; /* Ensure consistent size */
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .faqItem.open h3::after {
-  content: "-";
-  transform: rotate(180deg);
+  background-image: url("/assets/NewWeb/Assets/FAQSquareGold.svg");
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .answerWrapper {
