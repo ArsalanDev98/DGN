@@ -8,7 +8,7 @@ const Incentive: React.FC = () => {
         <div className={styles.incentiveContainer}>
           <h1>Incentive Program</h1>
           <h2 className={styles.subTitle}>
-            We offer an attractive revenue-sharing model
+            We offer an attractive revenue-reward model
           </h2>
           <div className={styles.incentiveContent}>
             <div className={styles.incentiveItem}>
