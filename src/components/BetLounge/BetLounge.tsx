@@ -3,6 +3,7 @@ import styles from "./BetLounge.module.css";
 import Partners from "../Partners/Partners";
 import SocialButtons from "../SocialButtons/SocialButtons";
 import RouletteImage from "/assets/NewWeb/Assets/Roulette2.png";
+import CheckeredLine from "/assets/NewWeb/Assets/CheckLine.png";
 
 const BetLounge: React.FC = () => {
   return (
@@ -27,6 +28,13 @@ const BetLounge: React.FC = () => {
           src={RouletteImage}
           alt="Roulette"
           className={styles.rouletteImage}
+        />
+      </div>
+      <div className={styles.checkeredLineWrapper}>
+        <img
+          src={CheckeredLine}
+          alt="Checkered Line"
+          className={styles.checkeredLine}
         />
       </div>
     </section>
