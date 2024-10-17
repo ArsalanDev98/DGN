@@ -9,9 +9,9 @@
   padding: 16px 40px;
   align-items: center;
   gap: 32px;
-  border-radius: 144px;
-  border: 1px solid #eba900;
-  background: rgba(38, 32, 20, 0.2);
+  border-radius: 41px; /* Apply the rounded corners */
+  border: 1px solid #eba900; /* Keep the border */
+  background: rgba(38, 32, 20, 0.9); /* Fill color #262014 with 20% opacity */
   max-width: 100%; /* Ensure the container doesn't exceed the width */
   margin: 0 auto; /* Center the content horizontally */
 }
@@ -32,6 +32,7 @@
   transform: scale(1.1);
 }
 
+/* Media Queries */
 @media (max-width: 1026px) {
   .partnersContainer {
     padding: 12px 24px;
@@ -53,5 +54,16 @@
 
   .partnerIcon {
     height: 40px; /* Further reduce size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .partnersContainer {
+    padding: 4px 12px; /* Reduce padding for very small screens */
+    gap: 8px; /* Smaller gap for icons */
+  }
+
+  .partnerIcon {
+    height: 30px; /* Minimize icon size */
   }
 }

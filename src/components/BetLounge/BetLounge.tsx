@@ -14,9 +14,8 @@ const BetLounge: React.FC = () => {
             <h1 className={styles.special_h1}>Gaming Network</h1>
           </div>
           <p className={styles.paragraph}>
-            The Ultimate Community Matchmaking And Gaming Experience.
-            <br />
-            Gamifying The Social Landscape Of Telegram
+            The Ultimate Community Matchmaking And Gaming Experience. Gamifying
+            The Social Landscape Of Telegram
           </p>
           <SocialButtons className={styles.betLoungeSocialButtons} />
           <div className={styles.partnersWrapper}>
