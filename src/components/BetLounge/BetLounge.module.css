@@ -51,18 +51,9 @@
   text-align: left; /* Ensure the title is aligned to the left */
   margin: 0;
   letter-spacing: 1px;
-  background: linear-gradient(
-    130deg,
-    #ffffff,
-    #ffffff,
-    #7e5e2c,
-    #e8bc4d,
-    #e8bc4d,
-    #e8bc4d
-  );
+
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
 }
 
 /* Paragraph */
