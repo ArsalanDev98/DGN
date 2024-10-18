@@ -12,8 +12,8 @@
 /* Main container */
 .aboutUsContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically */
   gap: 100px; /* Gap between the left and right columns */
   max-width: 100%;
   width: 100%;
@@ -51,7 +51,7 @@
 
 .rightColumn p {
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem); /* Adjusted clamp values */
   line-height: 1.6;
   margin-bottom: 16px;
   color: #bcbcc3;
@@ -75,7 +75,6 @@
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .aboutUsContainer {
-    flex-direction: column;
     align-items: center; /* Center the columns */
     text-align: center;
     gap: 20px;
@@ -117,7 +116,7 @@
   }
 
   .leftColumn img {
-    width: 70%; /* Scale the image down more for smaller screens */
+    width: 90%; /* Scale the image down more for smaller screens */
   }
 
   .aboutUsSection {
@@ -130,6 +129,13 @@
 }
 
 @media (max-width: 480px) {
+  .aboutUsContainer {
+    flex-direction: column;
+    align-items: center; /* Center the columns */
+    text-align: center;
+    gap: 20px;
+    padding: 0 30px; /* Match the padding as in BetLounge */
+  }
   .aboutUsSection {
     padding-bottom: 0;
   }
@@ -142,6 +148,6 @@
   }
 
   .leftColumn img {
-    width: 60%; /* Further reduce image size */
+    width: 90%; /* Further reduce image size */
   }
 }
