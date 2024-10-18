@@ -1,8 +1,8 @@
 .betLounge_section {
   width: 100%;
   padding: 12% 0 0 0;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
@@ -68,7 +68,8 @@
 /* Paragraph */
 .paragraph {
   margin: 0 0 55px 0;
-  font-size: 24px;
+  width: 60%;
+  font-size: 1.5rem;
   font-family: Raleway, sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -113,6 +114,7 @@
   bottom: 0;
   right: -200px; /* Move to the right */
   width: 55vw;
+  height: auto;
   max-width: 1200px;
   z-index: 1; /* Behind the content */
   opacity: 0.9;
@@ -143,7 +145,6 @@
 
   .betLounge_section {
     padding: 12% 0 0 0;
-
     min-height: auto; /* Remove forced 100vh to allow scaling */
   }
 
@@ -154,7 +155,7 @@
   }
 
   .rouletteImage {
-    width: 40vw;
+    width: 60vw;
     right: -50px;
     z-index: 1; /* Ensure it's behind the content */
   }
@@ -167,6 +168,7 @@
 
   .paragraph {
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .joinButton {
@@ -188,32 +190,28 @@
     right: -30px;
     z-index: 1; /* Still behind the content */
   }
+
   .betLounge_section {
     background-attachment: scroll; /* Change to scroll for better performance on mobile */
     padding: 80px 0 50px; /* Adjust padding to account for fixed navbar */
   }
 }
 
-.rouletteImage {
-  position: absolute;
-  bottom: 0;
-  right: -200px; /* Move it more to the right */
-  width: 55vw; /* Increase the width to make it larger */
-  max-width: 1200px; /* Set a larger maximum width */
-  z-index: 1;
-  opacity: 0.9;
-}
-
 @media only screen and (max-width: 480px) {
   .rouletteImage {
-    width: 50vw; /* Reduce size on small screens */
+    width: 60vw; /* Reduce size on small screens */
     right: -20px;
     z-index: 1; /* Behind content */
   }
 
   /* Adjust title font-size further down */
   .title h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
+  }
+
+  .paragraph {
+    font-size: 0.775rem;
+    width: 80%;
   }
 
   /* Move partners section further up */

@@ -1,0 +1,23 @@
+.checkeredLineWrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.checkeredLine {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkeredLine {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .checkeredLine {
+    height: 30px;
+  }
+}

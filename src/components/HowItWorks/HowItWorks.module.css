@@ -10,7 +10,7 @@
   align-items: center;
   border-radius: 80px;
   margin: 0 auto;
-  padding: 3% 0;
+  padding: 5% 3%;
   background-image: linear-gradient(
       90deg,
       rgba(227, 164, 85, 0.3) 7%,
@@ -60,16 +60,17 @@
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
   width: 100%;
-  padding: 0;
+  max-width: 1200px;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .cardContainer {
-  flex: 0 0 calc(33.33% - 40px);
-  max-width: 370px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/assets/NewWeb/Assets/HowItWorksCards.png");
   border-radius: 29px;
@@ -82,7 +83,6 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
-  margin: 20px;
   overflow: hidden;
 }
 
@@ -94,11 +94,11 @@
 .imgCard {
   width: 65%;
   height: auto;
-  max-height: 150px; /* Set a fixed maximum height for images */
+  max-height: 150px;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 8px;
-  object-fit: contain; /* Ensure the image fits within the container without distorting */
+  object-fit: contain;
 }
 
 .title {
@@ -107,8 +107,7 @@
   margin-bottom: 12px;
   color: #fff;
   font-weight: 700;
-  text-align: center; /* Changed from left to center for uniformity */
-  min-height: 60px; /* Ensure all titles have a fixed height */
+  text-align: center;
 }
 
 .description {
@@ -120,50 +119,114 @@
   margin-bottom: 16px;
   padding: 0 10px;
   text-align: left;
-  max-width: 95%;
-  min-height: 120px; /* Ensure a minimum height for the description */
 }
 
-/* Mobile adjustments to reduce card size and image size */
-@media only screen and (max-width: 768px) {
-  .howItWorksSection {
-    padding-top: 30px;
-    padding-bottom: 0;
-  }
-
-  .howItWorksContainer {
-    padding: 0;
-  }
-
+@media only screen and (max-width: 1200px) {
   .cards {
-    display: flex;
-    flex-direction: column; /* Stack the cards vertically */
-    gap: 15px;
-    padding: 0;
-    width: 100%;
+    max-width: 900px;
   }
 
   .cardContainer {
-    flex: 1;
-    max-width: 100%; /* Ensure cards take full width */
-    padding: 15px; /* Reduce padding for a tighter layout */
-    margin: 10px 0; /* Less margin between cards */
+    padding: 15px;
+    min-width: 200px;
   }
 
   .imgCard {
-    width: 25%; /* Maintain 25% width of the container */
-    height: auto; /* Let the height scale automatically */
-    max-height: none; /* No fixed height to ensure scaling */
+    width: 60%;
   }
 
   .title {
-    font-size: 1.4rem; /* Slightly smaller font for title */
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cards {
+    max-width: 700px;
+  }
+
+  .cardContainer {
+    padding: 10px;
+    min-width: 180px;
+  }
+
+  .imgCard {
+    width: 55%;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .cardContainer {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .imgCard {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .howItWorksSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .howItWorksContainer {
+    padding: 5% 3%;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cardContainer {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: unset;
+    padding: 15px;
+  }
+
+  .imgCard {
+    width: 25%;
+    max-height: none;
+  }
+
+  .title {
+    font-size: 1.4rem;
   }
 
   .description {
     font-size: 0.95rem;
     padding: 0 10px;
-    max-width: 100%;
   }
 
   .header h1 {
@@ -176,54 +239,5 @@
     padding: 0 20px;
     margin-top: 15px;
     margin: auto;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .howItWorksSection {
-    padding-bottom: 5%;
-  }
-
-  .howItWorksContainer {
-    padding-bottom: 5%;
-  }
-
-  .cards {
-    width: 90%;
-  }
-
-  .cardContainer {
-    flex: 1;
-    padding: 12px;
-    margin: 10px 0;
-  }
-
-  .imgCard {
-    width: 45%; /* Scale image to 25% of the container's width */
-    height: auto; /* Auto height to keep aspect ratio */
-  }
-
-  .title {
-    font-size: 1.3rem;
-  }
-
-  .description {
-    font-size: 0.85rem;
-    padding: 0 8px;
-  }
-
-  .header {
-    margin-top: 5%;
-  }
-
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .header p {
-    font-size: 0.9rem;
-    max-width: 95%;
-    padding: 0 10px;
-    margin-top: 15px;
   }
 }
