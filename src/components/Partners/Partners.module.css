@@ -10,8 +10,7 @@
   align-items: center;
   gap: 32px;
   border-radius: 41px; /* Apply the rounded corners */
-  border: 1px solid #eba900; /* Keep the border */
-  background: rgba(38, 32, 20, 0.9); /* Fill color #262014 with 20% opacity */
+  background: rgba(27, 23, 16, 0.9); /* Fill color #262014 with 20% opacity */
   max-width: 100%; /* Ensure the container doesn't exceed the width */
   margin: 0 auto; /* Center the content horizontally */
 }
