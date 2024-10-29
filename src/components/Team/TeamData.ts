@@ -49,7 +49,7 @@ const teamMembers = [
       "5 veteran advisors/marketing managers, Over 15 years combined experience in crypto. Veteran advisors and builders for large utility projects.",
     image: elevatedGif,
     icons: [xIcon, telegramIcon],
-    urls: ["https://twitter.com/thecryptoidol", "https://t.me/thecryptoidol"],
+    urls: ["https://x.com/DGNPlaynow", "https://t.co/rxzWvkSZZO"],
   },
 ];
 
