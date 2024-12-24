@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Roadmap.module.css";
-import roadmapImage from "/assets/NewWeb/Assets/Roadmap.png";
 import roadmapImage2 from "/assets/NewWeb/Assets/Roadmap2.png";
 
 const Roadmap: React.FC = () => {
