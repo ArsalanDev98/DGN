@@ -1,4 +1,4 @@
-.betLounge_section {
+.dgn_section {
   width: 100%;
   padding: 12% 0 0 0;
   display: flex;
@@ -111,7 +111,7 @@
   opacity: 0.9;
 }
 
-.betLoungeSocialButtons {
+.dgnSocialButtons {
   align-self: flex-start;
   margin-bottom: 40px;
 }
@@ -134,7 +134,7 @@
     font-size: 18px;
   }
 
-  .betLounge_section {
+  .dgn_section {
     padding: 12% 0 0 0;
     min-height: auto; /* Remove forced 100vh to allow scaling */
   }
@@ -172,7 +172,7 @@
     margin-top: 2rem; /* Move it further up for mobile */
   }
 
-  .betLounge_section {
+  .dgn_section {
     padding: 12% 0 0 0;
   }
 
@@ -182,7 +182,7 @@
     z-index: 1; /* Still behind the content */
   }
 
-  .betLounge_section {
+  .dgn_section {
     background-attachment: scroll; /* Change to scroll for better performance on mobile */
     padding: 80px 0 50px; /* Adjust padding to account for fixed navbar */
   }
@@ -210,7 +210,7 @@
     margin-top: 1.5rem;
   }
 
-  .betLounge_section {
+  .dgn_section {
     padding: 16% 0 0 0;
     min-height: auto; /* Allow it to adjust to the content size */
   }

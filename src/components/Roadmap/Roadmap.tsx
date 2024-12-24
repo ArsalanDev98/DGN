@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Roadmap.module.css";
 import roadmapImage from "/assets/NewWeb/Assets/Roadmap.png";
+import roadmapImage2 from "/assets/NewWeb/Assets/Roadmap2.png";
 
 const Roadmap: React.FC = () => {
   return (
@@ -12,7 +13,11 @@ const Roadmap: React.FC = () => {
             Decentralized Gaming Network Roadmap
           </h1>
         </div>
-        <img src={roadmapImage} alt="roadmap" className={styles.roadmapImage} />
+        <img
+          src={roadmapImage2}
+          alt="roadmap"
+          className={styles.roadmapImage}
+        />
       </div>
     </section>
   );

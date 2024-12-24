@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import BetLounge from "../components/BetLounge/BetLounge";
+import Dgn from "../components/Dgn/Dgn";
 import CheckeredLine from "../components/CheckeredLine/CheckeredLine";
 import AboutUs from "../components/AboutUs/AboutUs";
 import Faq from "../components/Faq/Faq";
@@ -10,7 +10,7 @@ const Team = React.lazy(() => import("../components/Team/Team"));
 const HomePage: React.FC = () => {
   return (
     <>
-      <BetLounge />
+      <Dgn />
       <CheckeredLine />
       <AboutUs />
       <Faq />

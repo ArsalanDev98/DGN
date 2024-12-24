@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./BetLounge.module.css";
+import styles from "./Dgn.module.css";
 import Partners from "../Partners/Partners";
 import SocialButtons from "../SocialButtons/SocialButtons";
 import RouletteImage from "/assets/NewWeb/Assets/Roulette2.png";
 
-const BetLounge: React.FC = () => {
+const Dgn: React.FC = () => {
   return (
-    <section className={styles.betLounge_section}>
+    <section className={styles.dgn_section}>
       <div className={`${styles.container} commonContainer`}>
         <div className={styles.content}>
           <div className={styles.title}>
@@ -17,7 +17,7 @@ const BetLounge: React.FC = () => {
             The Ultimate Community Matchmaking And Gaming Experience. Gamifying
             The Social Landscape Of Telegram
           </p>
-          <SocialButtons className={styles.betLoungeSocialButtons} />
+          <SocialButtons className={styles.dgnSocialButtons} />
           <div className={styles.partnersWrapper}>
             <Partners />
           </div>
@@ -32,4 +32,4 @@ const BetLounge: React.FC = () => {
   );
 };
 
-export default BetLounge;
+export default Dgn;

@@ -78,7 +78,7 @@
     align-items: center; /* Center the columns */
     text-align: center;
     gap: 20px;
-    padding: 0 30px; /* Match the padding as in BetLounge */
+    padding: 0 30px; /* Match the padding as in DGN */
   }
 
   .leftColumn {
@@ -134,7 +134,7 @@
     align-items: center; /* Center the columns */
     text-align: center;
     gap: 20px;
-    padding: 0 30px; /* Match the padding as in BetLounge */
+    padding: 0 30px; /* Match the padding as in DGN */
   }
   .aboutUsSection {
     padding-bottom: 0;
